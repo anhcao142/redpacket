@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Lì xì may mắn | HSBC (Việt Nam)</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <section id="header">
+    <div class="select-language">
+        <a class="float-right select-language-btn" href="#">
+          English&nbsp;
+          <img src="images/arrow_down.jpg">
+        </a>
+        <div class="clearfix"></div>
+    </div>
+    <a href="/" class="logo"><img src="./images/logo.png" alt=""></a>
+  </section>
+  <section id="hero" style="background-image: url('./images/hero.jpg');">
+    <div style="position: relative; height: 100%">
+      <div class="hero-caption">
+        <h1>
+          Lì xì may mắn
+          <br>
+          Gắn kết yêu thương
+        </h1>
+      </div>
+    </div>
+  </section>
+  <section id="introduction" style="background-image: url('./images/intro_bg.jpg')">
+    <img class="intro-branch" src="./images/branch.png">
+    <div class="container">
+      <div class="intro-content text-center">
+        Trao gửi niềm vui trong mỗi phong bao lì xì may mắn và lan tỏa yêu thương Tết này cùng HSBC!
+        <br>
+        Bạn có thể linh hoạt chọn ngân sách & đối tượng theo ý muốn.
+        <br>
+        Sau đó, hãy để Công cụ Lì Xì HSBC tính toán mức tiền mừng tuổi tối ưu dành cho bạn bè và người thân của bạn.
+        <br>
+        Quan trọng nhất, hãy cùng người thân chia sẻ những khoảnh khắc Năm Mới ngọt ngào cùng những điểm ưu đãi tuyệt vời của HSBC bạn nhé!
+      </div>
+    </div>
+  </section>
+  <section id="redpacket-calculator">
+    <div class="inner-content text-center">
+      <h1 class="redpacket-title color-red">BẢNG TÍNH TIỀN LÌ XÌ MAY MẮN</h1>
+      <p class="redpacket-description">Nhập ngân sách của bạn và xem mùa Tết này bạn nên dành bao nhiêu tiền lì xì cho người thân, bạn bè.</p>
+
+      <div class="redpacket-calculator-detail text-left" style="background-image: url('./images/backgift.jpg')">
+        <div class="input-budget row">
+          <div class="col-lg-4 col-sm-6">
+            <div class="form-group">
+              <label class="color-red" for="bugdet">Ngân sách của bạn</label>
+              <input class="form-control" id="budget" name="budget" type="text" placeholder="Nhập ngân sách của bạn">
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="form-group suggest-budget collapse">
+              <label class="color-red" for="suggest-budget">Ngân sách chúng tôi đề nghị</label>
+              <input class="form-control" id="suggest-budget" name="suggest-budget" type="text" value="800" readonly>
+            </div>
+          </div>
+        </div>
+
+        <div class="redpacket-calculator-factors">
+          <div class="row">
+            <div class="col-lg-4 column">
+              <div class="form-group row bugdet-factor">
+                <label class="col-4 col-sm-4 col-form-label" for="grandparents">Ông bà</label>
+                <div class="col-8 col-sm-8">
+                  <div class="budget-amount collapse">
+                    <span></span>
+                    <img src="" alt="">
+                  </div>
+                  <div class="controller">
+                    <div class="minus-one"><img src="./images/arrow-left.png"></div>
+                    <div class="plus-one"><img src="./images/arrow-right.png"></div>
+                  </div>
+                  <input class="form-control" name="grandparents" id="grandparents" type="text">
+                </div>
+              </div>
+              <div class="form-group row bugdet-factor">
+                <label class="col-4 col-sm-4 col-form-label" for="parents">Cha mẹ</label>
+                <div class="col-8 col-sm-8" style="position: relative;">
+                  <div class="budget-amount collapse">
+                    <span></span>
+                    <img src="" alt="">
+                  </div>
+                  <div class="controller">
+                    <div class="minus-one"><img src="./images/arrow-left.png"></div>
+                    <div class="plus-one"><img src="./images/arrow-right.png"></div>
+                  </div>
+                  <input class="form-control" name="parents" id="parents" type="text">
+                </div>
+              </div>
+              <div class="form-group row bugdet-factor">
+                <label class="col-4 col-sm-4 col-form-label" for="spouse">Bạn đời</label>
+                <div class="col-8 col-sm-8">
+                  <div class="budget-amount collapse">
+                    <span></span>
+                    <img src="" alt="">
+                  </div>
+                  <div class="controller">
+                    <div class="minus-one"><img src="./images/arrow-left.png"></div>
+                    <div class="plus-one"><img src="./images/arrow-right.png"></div>
+                  </div>
+                  <input class="form-control" name="spouse" id="spouse" type="text">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 column">
+              <div class="form-group row bugdet-factor">
+                <label class="col-4 col-sm-4 col-form-label" for="children">Con</label>
+                <div class="col-8 col-sm-8">
+                  <div class="budget-amount collapse">
+                    <span></span>
+                    <img src="" alt="">
+                  </div>
+                  <div class="controller">
+                    <div class="minus-one"><img src="./images/arrow-left.png"></div>
+                    <div class="plus-one"><img src="./images/arrow-right.png"></div>
+                  </div>
+                  <input class="form-control" name="children" id="children" type="text">
+                </div>
+              </div>
+              <div class="form-group row bugdet-factor">
+                <label class="col-4 col-sm-4 col-form-label" for="siblings">Anh chị em</label>
+                <div class="col-8 col-sm-8">
+                  <div class="budget-amount collapse">
+                    <span></span>
+                    <img src="" alt="">
+                  </div>
+                  <div class="controller">
+                    <div class="minus-one"><img src="./images/arrow-left.png"></div>
+                    <div class="plus-one"><img src="./images/arrow-right.png"></div>
+                  </div>
+                  <input class="form-control" name="siblings" id="siblings" type="text">
+                </div>
+              </div>
+              <div class="form-group row bugdet-factor">
+                <label class="col-4 col-sm-4 col-form-label" for="grandchildren">Cháu</label>
+                <div class="col-8 col-sm-8">
+                  <div class="budget-amount collapse">
+                    <span></span>
+                    <img src="" alt="">
+                  </div>
+                  <div class="controller">
+                    <div class="minus-one"><img src="./images/arrow-left.png"></div>
+                    <div class="plus-one"><img src="./images/arrow-right.png"></div>
+                  </div>
+                  <input class="form-control" name="grandchildren" id="grandchildren" type="text">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 column">
+              <div class="form-group row bugdet-factor">
+                <label class="col-4 col-sm-4 col-form-label" for="lover">Người yêu</label>
+                <div class="col-8 col-sm-8">
+                  <div class="budget-amount collapse">
+                    <span></span>
+                    <img src="" alt="">
+                  </div>
+                  <div class="controller">
+                    <div class="minus-one"><img src="./images/arrow-left.png"></div>
+                    <div class="plus-one"><img src="./images/arrow-right.png"></div>
+                  </div>
+                  <input class="form-control" name="lover" id="lover" type="text">
+                </div>
+              </div>
+              <div class="form-group row bugdet-factor">
+                <label class="col-4 col-sm-4 col-form-label" for="friends">Bạn bè</label>
+                <div class="col-8 col-sm-8">
+                  <div class="budget-amount collapse">
+                    <span></span>
+                    <img src="" alt="">
+                  </div>
+                  <div class="controller">
+                    <div class="minus-one"><img src="./images/arrow-left.png"></div>
+                    <div class="plus-one"><img src="./images/arrow-right.png"></div>
+                  </div>
+                  <input class="form-control" name="friends" id="friends" type="text">
+                </div>
+              </div>
+              <div class="form-group row bugdet-factor">
+                <label class="col-4 col-sm-4 col-form-label" for="colleagues">Đồng nghiệp</label>
+                <div class="col-8 col-sm-8">
+                  <div class="budget-amount collapse">
+                    <span></span>
+                    <img src="" alt="">
+                  </div>
+                  <div class="controller">
+                    <div class="minus-one"><img src="./images/arrow-left.png"></div>
+                    <div class="plus-one"><img src="./images/arrow-right.png"></div>
+                  </div>
+                  <input class="form-control" name="colleagues" id="colleagues" type="text">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="redpacket-calculator-result collapse">
+          <p><strong>Chi tiết số tiền may mắn mà bạn cần chuẩn bị</strong></p>
+          <div class="redpacket-amount-detail row">
+            <!-- <div class="col-sm-3">
+              <div>100.000VND</div>
+            </div>
+            <div class="col-sm-3">
+              <div>100.000VND</div>
+            </div>
+            <div class="col-sm-3">
+              <div>100.000VND</div>
+            </div>
+            <div class="col-sm-3">
+              <div>100.000VND</div>
+            </div> -->
+          </div>
+          <small class="text-muted"><i>*Kết quả này chỉ mang tính chất tham khảo</i></small>
+        </div>
+
+        <div class="redpacket-calculator-submit">
+          <button id="btn-calculate">Tính ngay</button>
+          <button id="btn-recalculate" class="collapse">Tính toán lại</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section id="special-offer">
+    <div class="offer-banner text-center">
+      <h1 class="color-red">ƯU ĐÃI ĐẶC BIỆT TẾT 2018</h1>
+      <div>Chia sẻ Tết ý nghĩa bên những người thương yêu của bạn cùng ưu đãi đặc quyền từ HSBC</div>
+    </div>
+    <div class="space"></div>
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="card offer-card">
+          <div class="card-img-top" style="background-image: url('./images/thumbnail-1.jpg')"></div>
+          <div class="card-body" style="background-image: url('./images/blur-1.jpg')">
+            <p class="card-text">
+              Mua sắm những sản phẩm yêu thích với chương trình
+              <a href="#" class="color-red">Mua hàng trả góp lãi suất.</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card offer-card">
+          <div class="card-img-top" style="background-image: url('./images/thumbnail-2.jpg')"></div>
+          <div class="card-body" style="background-image: url('./images/blur-2.jpg')">
+            <p class="card-text">
+              Mua sắm những sản phẩm yêu thích với chương trình
+              <a href="#" class="color-red">Mua hàng trả góp lãi suất.</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card offer-card">
+          <div class="card-img-top" style="background-image: url('./images/thumbnail-3.jpg')"></div>
+          <div class="card-body" style="background-image: url('./images/blur-3.jpg')">
+            <p class="card-text">
+              Mua sắm những sản phẩm yêu thích với chương trình
+              <a href="#" class="color-red">Mua hàng trả góp lãi suất.</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card offer-card">
+          <div class="card-img-top" style="background-image: url('./images/thumbnail-4.jpg')"></div>
+          <div class="card-body" style="background-image: url('./images/blur-4.jpg')">
+            <p class="card-text">
+              Mua sắm những sản phẩm yêu thích với chương trình
+              <a href="#" class="color-red">Mua hàng trả góp lãi suất.</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="register-hsbc-credit" class="text-center" style="background-image: url('./images/footer.jpg')">
+    <h1>Bạn đã có Thẻ Tín Dụng HSBC Visa chưa?</h1>
+    <div class="description" style="font-weight: 200">
+      Với Thẻ Tín Dụng HSBC Visa, thật dễ dàng để tận hưởng những ưu đãi đặc biệt.
+      <br>
+      Hãy chọn ngay Thẻ Tín Dụng phù hợp nhất với bạn ngay hôm nay
+    </div>
+    <img class="visa-cards" src="./images/cards.png" alt="">
+    <div>
+      <a href="#" class="btn btn-secondary register-card-btn">Mở thẻ ngay ></a>
+    </div>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/locales/vi.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

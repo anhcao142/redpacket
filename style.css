@@ -1,0 +1,540 @@
+@font-face {
+    font-family: "VNIUnivers";
+    src: url("./VNI-Univers-Light.ttf") format("truetype");
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: "VNIUnivers";
+    src: url("./VNI-Univers-Bold.ttf") format("truetype");
+    font-weight: bold;
+}
+
+* {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #535353;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1260px !important;
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    div, p {
+        font-size: 0.8rem;
+    }
+}
+
+.color-red {
+    color: #d60a1e;
+}
+
+.select-language {
+    background: #000;
+    color: white;
+}
+
+.select-language-btn {
+    color: white;
+    text-decoration: none;
+    padding: 7px 7px;
+    font-size: 0.8rem;
+}
+
+.select-language-btn:hover, .select-language-btn:focus {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    padding: 17px 30px;
+    display: block;
+}
+
+.logo img {
+    height: 25px;
+}
+
+#hero {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+}
+
+
+#hero .hero-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    padding: 0 45px;
+    padding-bottom: 20px;
+    font-family: arial, sans-serif !important;
+    font-weight: bold;
+}
+
+#hero .hero-caption h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 2.5rem;
+    text-shadow: 0px 0px 5px rgba(150, 150, 150, 0.7);
+}
+
+
+@media (max-width: 767px) {
+    #hero {
+        height: 200px;
+        background-size: 125% auto;
+    }
+
+
+    #hero .hero-caption h1 {
+        font-size: 1.5rem;
+    }
+
+    #hero .hero-caption {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+#introduction {
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+    color: #535353;
+}
+
+.intro-branch {
+    position: absolute;
+    padding: 45px 0;
+    left: 0;
+    // bottom: 0;
+    width: 200px;
+    z-index: 0;
+}
+
+.intro-content {
+    padding: 45px 0;
+    z-index: 100;
+    position: relative;
+}
+
+@media (max-width: 767px) {
+    .intro-branch {
+        padding: 0;
+        padding-top: 0px;
+        height: auto;
+        width: 25%;
+        left: -20px;
+    }
+
+    .intro-content {
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 0.9rem;
+    }
+}
+
+
+#redpacket-calculator {
+    margin: 40px 45px;
+    margin-bottom: 50px;
+}
+
+#redpacket-calculator .inner-content {
+    background: #ffdbdc;
+    padding-top: 20px;
+}
+
+#redpacket-calculator .redpacket-title {
+    margin-bottom: 7px;
+}
+
+#redpacket-calculator .redpacket-description {
+    margin-bottom: 20px;
+}
+
+.redpacket-calculator-detail {
+    background-position: center bottom;
+    // background-size: 100% auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // height: 860px;
+    padding: 40px 100px;
+    padding-bottom: 450px;
+}
+
+.redpacket-calculator-detail .input-budget label {
+    font-weight: bold;
+}
+
+.redpacket-calculator-detail .input-budget input {
+    border: none;
+    border-radius: 0;
+    font-size: 0.9rem;
+    padding: 10px 14px;
+    max-width: 300px;
+}
+
+
+@media (max-width: 767px) {
+    .redpacket-calculator-detail {
+        padding-bottom: 300px !important;
+        background-size: 130% auto;
+    }
+
+    .redpacket-calculator-detail .input-budget input {
+        max-width: 200px;
+    }
+
+    #redpacket-calculator {
+        margin: 25px 0;
+    }
+
+    #redpacket-calculator .redpacket-description {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .redpacket-calculator-detail {
+        padding: 25px 35px;
+        // padding-right: 10px;
+    }
+}
+
+
+.suggest-budget input {
+    font-style: normal !important;
+}
+
+.suggest-budget input:read-only {
+    background-color: white;
+}
+
+.suggest-budget input:-moz-read-only {
+    background-color: white;
+}
+
+.redpacket-calculator-factors {
+    padding-top: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.redpacket-calculator-result {
+    padding-top: 40px;
+}
+
+@media (max-width: 767px) {
+    .redpacket-calculator-factors {
+        padding-top: 20px;
+    }
+
+    .redpacket-calculator-result {
+        padding-top: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .redpacket-amount-detail {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .column {
+        margin-bottom: 20px;
+    }
+
+    .column:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .redpacket-calculator-detail {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .redpacket-amount-detail {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+.redpacket-amount-detail {
+    background-color: white;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.redpacket-calculator-factors .row {
+    margin-right: -45px;
+}
+
+
+.redpacket-calculator-detail .bugdet-factor {
+    margin-bottom: 13px;
+    margin-right: 0;
+}
+
+
+.redpacket-calculator-detail .budget-amount {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 5px;
+    margin: 0 15px;
+    line-height: 36px;
+    text-align: center;
+    background-color: white;
+}
+
+
+.redpacket-calculator-detail .budget-amount img {
+    height: 25px;
+    margin-top: -2px;
+}
+
+
+.redpacket-calculator-detail .bugdet-factor .controller {
+    position: relative;
+}
+
+
+.redpacket-calculator-detail .bugdet-factor .minus-one {
+    position: absolute;
+    padding: 5px 0;
+    padding-right: 5px;
+    left: 0;
+    cursor: pointer;
+}
+
+.redpacket-calculator-detail .bugdet-factor .plus-one {
+    position: absolute;
+    padding: 5px 0;
+    padding-left: 5px;
+    right: 0;
+    cursor: pointer;
+}
+
+.redpacket-calculator-detail .bugdet-factor .plus-one img, .redpacket-calculator-detail .bugdet-factor .minus-one img {
+    width: 15px;
+}
+
+.redpacket-calculator-detail .bugdet-factor label {
+    background-color: #da0010;
+    text-align: center;
+    color: white;
+    padding: 7px 0;
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+
+
+.redpacket-calculator-detail .bugdet-factor input {
+    border: none;
+    border-radius: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+
+.redpacket-calculator-submit {
+    padding-top: 40px;
+}
+
+
+.redpacket-calculator-submit button {
+    padding: 7px 40px;
+    background-color: #da0010;
+    color: white;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .redpacket-calculator-detail .bugdet-factor {
+        // margin-right: -30px;
+        margin-bottom: 10px;
+    }
+
+    .redpacket-calculator-detail .bugdet-factor label {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    .redpacket-calculator-submit {
+        padding-top: 20px;
+    }
+
+    .redpacket-calculator-submit button {
+        padding: 7px 20px;
+    }
+
+    .redpacket-calculator-detail .bugdet-factor .plus-one {
+        padding-left: 10px;
+    }
+
+    .redpacket-calculator-detail .bugdet-factor .minus-one {
+        padding-right: 10px;
+    }
+}
+
+
+#special-offer {
+    margin: 0 45px;
+    margin-bottom: 35px;
+}
+
+.offer-banner {
+    background-color: #feeae3;
+    padding: 20px 0;
+}
+
+
+#special-offer .space {
+    height: 30px;
+}
+
+.offer-thumbnail {
+    width: 50%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 200px;
+}
+.offer-card {
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 0;
+}
+
+.offer-card .card-img-top {
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0;
+}
+
+.offer-card .card-body {
+    background-position: center;
+    background-size: cover;
+    padding: 25px;
+    font-size: 19px;
+    font-weight: 200;
+    color: #4c4c4c;
+}
+
+
+@media (max-width: 767px) {
+    #special-offer {
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    #special-offer .space {
+        height: 15px;
+    }
+
+    #special-offer {
+        overflow: hidden;
+    }
+
+    .offer-card {
+        margin-bottom: 15px;
+    }
+}
+
+
+#register-hsbc-credit {
+    background-color: #3c505c;
+    padding: 60px 0;
+    color: white;
+    background-position: center;
+    background-size: cover;
+}
+
+#register-hsbc-credit h1 {
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+#register-hsbc-credit .description {
+    font-size: 22px;
+    font-weight: 200;
+    color: white;
+}
+
+.visa-cards {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: auto;
+    height: 55px;
+}
+
+.register-card-btn {
+    border-radius: 0 !important;
+    background-color: #3c505c;
+    border: none;
+}
+
+.register-card-btn:hover {
+    background-color: #33444e;
+}
+
+@media (max-width: 767px) {
+    #register-hsbc-credit {
+        padding: 40px 0;
+    }
+
+    #register-hsbc-credit h1 {
+        font-size: 1.2rem;
+    }
+
+    #register-hsbc-credit .description {
+        font-size: 0.8rem;
+        padding: 0 30px;
+    }
+
+    .visa-cards {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: auto;
+        height: 45px;
+    }
+
+    .register-card-btn {
+        background-color: white;
+        color: #da0010;
+    }
+
+    .register-card-btn:hover {
+        background-color: white;
+        color: #da0010;
+    }
+}
+
