@@ -164,6 +164,7 @@ body {
 
 #redpacket-calculator .redpacket-description {
     margin-bottom: 20px;
+    padding: 0 20px;
 }
 
 .redpacket-calculator-detail {
@@ -172,7 +173,7 @@ body {
     // background-size: cover;
     background-repeat: no-repeat;
     // height: 860px;
-    padding: 40px 100px;
+    padding: 40px 75px;
     padding-bottom: 450px;
 }
 
@@ -188,31 +189,6 @@ body {
     max-width: 300px;
 }
 
-
-@media (max-width: 767px) {
-    .redpacket-calculator-detail {
-        padding-bottom: 300px !important;
-        background-size: 130% auto;
-    }
-
-    .redpacket-calculator-detail .input-budget input {
-        max-width: 200px;
-    }
-
-    #redpacket-calculator {
-        margin: 25px 0;
-    }
-
-    #redpacket-calculator .redpacket-description {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .redpacket-calculator-detail {
-        padding: 25px 35px;
-        // padding-right: 10px;
-    }
-}
 
 
 .suggest-budget input {
@@ -237,7 +213,43 @@ body {
     padding-top: 40px;
 }
 
+
+@media (max-width: 991px) {
+    .redpacket-calculator-detail {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 300px;
+        background-size: cover;
+    }
+
+    .redpacket-amount-detail {
+        font-size: 0.9rem;
+    }
+}
+
+
+
 @media (max-width: 767px) {
+    .redpacket-calculator-detail {
+        padding-bottom: 300px !important;
+        background-size: 130% auto;
+        padding: 25px 20px;
+        background-size: cover;
+    }
+
+    .redpacket-calculator-detail .input-budget input {
+        max-width: 200px;
+    }
+
+    #redpacket-calculator {
+        margin: 25px 0;
+    }
+
+    #redpacket-calculator .redpacket-description {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .redpacket-calculator-factors {
         padding-top: 20px;
     }
@@ -261,20 +273,6 @@ body {
         margin-bottom: 0;
     }
 }
-
-
-@media (max-width: 991px) {
-    .redpacket-calculator-detail {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-
-    .redpacket-amount-detail {
-        font-size: 0.9rem;
-    }
-}
-
-
 
 .redpacket-amount-detail {
     background-color: white;
@@ -446,6 +444,21 @@ body {
     font-size: 19px;
     font-weight: 200;
     color: #4c4c4c;
+    height: 295px;
+}
+
+
+@media (max-width: 1090px) {
+    .offer-card .card-body {
+        height: 325px;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .offer-card .card-body {
+        height: auto;
+    }
 }
 
 
@@ -466,7 +479,12 @@ body {
     .offer-card {
         margin-bottom: 15px;
     }
+
+    .offer-card .card-body {
+        height: auto;
+    }
 }
+
 
 
 #register-hsbc-credit {
@@ -538,3 +556,50 @@ body {
     }
 }
 
+
+
+#footer {
+    padding: 15px 20px;
+    background-color: black;
+    font-size: 0.75rem;
+    color: white !important;
+    padding-bottom: 5px;
+}
+
+#footer span {
+    color: white;
+}
+
+#footer a {
+    color: white;
+    margin-right: 35px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+#footer a:hover {
+    text-decoration: none;
+    color: #f00!important
+}
+
+#footer a:last-child {
+    margin-right: 0;
+}
+
+#footer .copywrite {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1090px) {
+    #footer .copywrite {
+        float: left !important;
+        display: block;
+    }
+}
+
+
+@media (max-width: 500px) {
+    #footer a {
+        display: block;
+    }
+}
