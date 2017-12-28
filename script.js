@@ -19,6 +19,16 @@ const budgetAdjustSequence = ['colleagues', 'friends', 'lover', 'grandchildren',
 
 $('#btn-calculate').on('click', function () {
     const budget    = parseInt($('input[name="budget"]').val()) || 0;
+    $('.input-budget .help-block').text('*Bạn chưa nhập ngân sách!').hide();
+
+    if (!$('input[name="budget"]').val() && $('input[name="budget"]').val() !== 0) {
+        $('.input-budget .help-block').text('*Bạn chưa nhập ngân sách!').fadeIn();
+        return;
+    } else if (isNaN(budget)) {
+        $('.input-budget .help-block').text('*Số tiền chưa hợp lệ!').fadeIn();
+        return;
+    }
+
     const quantity  = {};
     const allNotes  = {};
     const amtType   = {};
