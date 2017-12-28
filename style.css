@@ -168,8 +168,8 @@ body {
 
 .redpacket-calculator-detail {
     background-position: center bottom;
-    // background-size: 100% auto;
-    background-size: cover;
+    background-size: 100% auto;
+    // background-size: cover;
     background-repeat: no-repeat;
     // height: 860px;
     padding: 40px 100px;
