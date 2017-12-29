@@ -515,6 +515,11 @@ body {
         overflow: hidden;
     }
 
+    .offer-banner-description {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .offer-card {
         margin-bottom: 15px;
     }
