@@ -35,17 +35,18 @@ $('#btn-calculate').on('click', function () {
     const amtType   = {};
     let amount;
     let budgetTableIndex;
+    let isValid     = false;
 
     $('.bugdet-factor input').each(function () {
         const key   = $(this).attr('name');
         const val   = $(this).val() || 0;
 
-        if (val == 0) return;
+        if (val > 0) isValid = true;
 
         quantity[key]   = parseInt(val);
     })
 
-    if (!Object.keys(quantity).length) {
+    if (!isValid) {
         $('.redpacket-calculator-factors .help-block').fadeIn();
         return;
     }
@@ -68,10 +69,12 @@ $('#btn-calculate').on('click', function () {
         }
     }
 
-
     Object.keys(amount).forEach(function (key) {
-        if (!amtType[amount[key]]) amtType[amount[key]] = 0;
-        amtType[amount[key]] += quantity[key];
+        if (!amtType[amount[key]] && amtType[amount[key]] !== 0) {
+            amtType[amount[key]] = 0;
+        }
+
+        amtType[amount[key]] += parseInt(quantity[key]);
     });
 
 

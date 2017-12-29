@@ -243,6 +243,11 @@ body {
     .redpacket-amount-detail {
         font-size: 0.9rem;
     }
+
+    .column {
+        padding-right: 0;
+    }
+
 }
 
 
@@ -256,7 +261,7 @@ body {
     }
 
     .redpacket-calculator-detail .input-budget input {
-        max-width: 200px;
+        max-width: 100%;
     }
 
     #redpacket-calculator {
@@ -285,10 +290,19 @@ body {
 
     .column {
         margin-bottom: 20px;
+        padding-right: 7.5px;
     }
 
     .column:last-child {
         margin-bottom: 0;
+    }
+
+    .redpacket-calculator-detail .currency-unit span {
+        padding: 12px 10px;
+    }
+
+    .redpacket-calculator-detail .currency-unit input {
+        max-width: 100%;
     }
 }
 
@@ -300,11 +314,6 @@ body {
     margin-left: 0px;
     margin-right: 0px;
 }
-
-.redpacket-calculator-factors .row {
-    margin-right: -45px;
-}
-
 
 .redpacket-calculator-detail .bugdet-factor {
     margin-bottom: 13px;
@@ -391,6 +400,10 @@ body {
 }
 
 @media (max-width: 767px) {
+    .redpacket-calculator-factors {
+        padding-right: 0;
+    }
+
     .redpacket-calculator-detail .bugdet-factor {
         // margin-right: -30px;
         margin-bottom: 10px;
