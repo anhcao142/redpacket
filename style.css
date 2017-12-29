@@ -224,7 +224,6 @@ body {
 .redpacket-calculator-factors {
     padding-top: 20px;
     padding-left: 15px;
-    padding-right: 15px;
 }
 
 .redpacket-calculator-result {
@@ -248,6 +247,9 @@ body {
         padding-right: 0;
     }
 
+    .redpacket-calculator-factors {
+        padding-right: 15px;
+    }
 }
 
 
