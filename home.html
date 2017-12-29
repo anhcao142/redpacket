@@ -54,7 +54,10 @@
           <div class="col-lg-4 col-sm-6">
             <div class="form-group">
               <label class="color-red" for="bugdet">Ngân sách của bạn</label>
-              <input class="form-control" id="budget" name="budget" type="text" placeholder="Nhập ngân sách của bạn">
+              <div class="currency-unit">
+                <span>VND</span>
+                <input class="form-control" id="budget" name="budget" type="text" placeholder="Nhập ngân sách của bạn">
+              </div>
               <div class="help-block text-danger collapse" style="margin-top: 10px; font-size: 0.9rem;">
                 Số tiền không hợp lệ
               </div>
@@ -200,6 +203,11 @@
                   </div>
                   <input class="form-control" value="0" name="colleagues" id="colleagues" type="text">
                 </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="help-block text-danger collapse" style="font-size: 0.9rem;">
+                *Bạn chưa chọn người nhận
               </div>
             </div>
           </div>

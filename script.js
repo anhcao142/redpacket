@@ -1,6 +1,6 @@
 numeral.locale('vi');
 
-const noteTypes     = [500, 200, 100, 50, 20, 10];
+const noteTypes     = [500, 200, 100, 50, 20, 10, 5, 2, 1];
 const budgetTable   = [
     { 'parents':  100, 'grandparents':  100, 'spouse': 100, 'children':  100, 'siblings':  20, 'grandchildren':  10, 'lover':  20, 'friends':  5, 'colleagues':  5 },
     { 'parents':  200, 'grandparents':  150, 'spouse': 150, 'children':  150, 'siblings':  50, 'grandchildren':  20, 'lover':  50, 'friends':  8, 'colleagues':  8 },
@@ -18,13 +18,14 @@ const budgetAdjustSequence = ['colleagues', 'friends', 'lover', 'grandchildren',
 
 
 $('#btn-calculate').on('click', function () {
-    const budget    = parseInt($('input[name="budget"]').val()) || 0;
+    const budget    = numeral($('input[name="budget"]').val()).value() || 0;
     $('.input-budget .help-block').text('*Bạn chưa nhập ngân sách!').hide();
+    $('.redpacket-calculator-factors .help-block').hide();
 
     if (!$('input[name="budget"]').val() && $('input[name="budget"]').val() !== 0) {
         $('.input-budget .help-block').text('*Bạn chưa nhập ngân sách!').fadeIn();
         return;
-    } else if (isNaN(budget)) {
+    } else if (!budget || budget < 0) {
         $('.input-budget .help-block').text('*Số tiền chưa hợp lệ!').fadeIn();
         return;
     }
@@ -39,8 +40,15 @@ $('#btn-calculate').on('click', function () {
         const key   = $(this).attr('name');
         const val   = $(this).val() || 0;
 
+        if (val == 0) return;
+
         quantity[key]   = parseInt(val);
     })
+
+    if (!Object.keys(quantity).length) {
+        $('.redpacket-calculator-factors .help-block').fadeIn();
+        return;
+    }
 
     // validate budget
     for (var i = 0; i < budgetTable.length; i++) {
@@ -51,7 +59,7 @@ $('#btn-calculate').on('click', function () {
     }
 
     if (calTotal(quantity, amount) > budget) {
-        for (var i = 0; i < budgetAdjustSequence.length; i++) {
+        for (var i = 0; i < budgetAdjustSequence.length && budgetTableIndex > 0; i++) {
             const adjustKey     = budgetAdjustSequence[i];
             console.log(budgetTableIndex);
             amount[adjustKey]   = budgetTable[budgetTableIndex - 1][adjustKey];
@@ -161,12 +169,20 @@ function displayNotes(notes) {
 let prevBudget  = 0;
 
 $('input[name="budget"]').on('change keydown keypress keyup mousedown click mouseup', function (e) {
-    const val   = parseInt($(this).val());
-
-    if (isNaN(val) || val < 0) {
-        $(this).val('');
+    if (!$(this).val()) {
+        $('.input-budget .help-block').fadeOut();
         return;
     }
+
+    const val   = numeral($(this).val()).value();
+
+    if (isNaN(val) || !val || val < 0) {
+        $('.input-budget .help-block').text('*Số tiền chưa hợp lệ!').fadeIn();
+        return;
+    }
+
+    $('.input-budget .help-block').fadeOut();
+    $(this).val(numeral(val).format('0,0'));
 })
 
 
