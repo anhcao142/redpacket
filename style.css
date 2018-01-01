@@ -39,6 +39,10 @@ body {
     color: #d60a1e;
 }
 
+a.color-red:hover {
+    color: #d60a1e;
+}
+
 .select-language {
     background: #000;
     color: white;
@@ -179,6 +183,7 @@ body {
 
 .redpacket-calculator-detail .input-budget {
     min-height: 120px;
+    margin-bottom: 30px;
 }
 
 .redpacket-calculator-detail .input-budget label {
@@ -226,8 +231,27 @@ body {
     padding-left: 15px;
 }
 
+#redpacket-calculator .space {
+    height: 20px;
+}
+
 .redpacket-calculator-result {
     padding-top: 40px;
+}
+
+
+.redpacket-calculator-result-note {
+    margin-bottom: 30px;
+}
+
+
+.redpacket-calculator-result-note img {
+    margin-top: -2px;
+    margin-left: -2px;
+}
+
+.redpacket-calculator-result-note span {
+    font-weight: bold;
 }
 
 
@@ -317,7 +341,7 @@ body {
     margin-right: 0px;
 }
 
-.redpacket-calculator-detail .bugdet-factor {
+.redpacket-calculator-detail .budget-factor {
     margin-bottom: 13px;
     margin-right: 0;
 }
@@ -343,12 +367,12 @@ body {
 }
 
 
-.redpacket-calculator-detail .bugdet-factor .controller {
+.redpacket-calculator-detail .budget-factor .controller {
     position: relative;
 }
 
 
-.redpacket-calculator-detail .bugdet-factor .minus-one {
+.redpacket-calculator-detail .budget-factor .minus-one {
     position: absolute;
     padding: 6px 0;
     padding-right: 5px;
@@ -356,7 +380,7 @@ body {
     cursor: pointer;
 }
 
-.redpacket-calculator-detail .bugdet-factor .plus-one {
+.redpacket-calculator-detail .budget-factor .plus-one {
     position: absolute;
     padding: 6px 0;
     padding-left: 5px;
@@ -364,11 +388,11 @@ body {
     cursor: pointer;
 }
 
-.redpacket-calculator-detail .bugdet-factor .plus-one img, .redpacket-calculator-detail .bugdet-factor .minus-one img {
+.redpacket-calculator-detail .budget-factor .plus-one img, .redpacket-calculator-detail .budget-factor .minus-one img {
     width: 17px;
 }
 
-.redpacket-calculator-detail .bugdet-factor label {
+.redpacket-calculator-detail .budget-factor label {
     background-color: #da0010;
     text-align: center;
     color: white;
@@ -378,7 +402,12 @@ body {
 }
 
 
-.redpacket-calculator-detail .bugdet-factor input {
+.redpacket-calculator-detail .budget-factor.en label {
+    font-size: 0.85rem;
+}
+
+
+.redpacket-calculator-detail .budget-factor input {
     border: none;
     border-radius: 0;
     padding-left: 20px;
@@ -406,12 +435,12 @@ body {
         padding-right: 0;
     }
 
-    .redpacket-calculator-detail .bugdet-factor {
+    .redpacket-calculator-detail .budget-factor {
         // margin-right: -30px;
         margin-bottom: 10px;
     }
 
-    .redpacket-calculator-detail .bugdet-factor label {
+    .redpacket-calculator-detail .budget-factor label {
         font-size: 0.8rem;
         padding: 8px;
     }
@@ -424,19 +453,19 @@ body {
         padding: 7px 20px;
     }
 
-    .redpacket-calculator-detail .bugdet-factor .plus-one {
+    .redpacket-calculator-detail .budget-factor .plus-one {
         padding-top: 7px;
         padding-bottom: 7px;
         padding-left: 10px;
     }
 
-    .redpacket-calculator-detail .bugdet-factor .minus-one {
+    .redpacket-calculator-detail .budget-factor .minus-one {
         padding-top: 7px;
         padding-bottom: 7px;
         padding-right: 10px;
     }
 
-    .redpacket-calculator-detail .bugdet-factor .plus-one img, .redpacket-calculator-detail .bugdet-factor .minus-one img {
+    .redpacket-calculator-detail .budget-factor .plus-one img, .redpacket-calculator-detail .budget-factor .minus-one img {
         width: 20px;
     }
 }
@@ -485,19 +514,30 @@ body {
     font-size: 19px;
     font-weight: 200;
     color: #4c4c4c;
-    height: 295px;
+    height: 280px;
 }
 
+.offer-card .card-body.en {
+    height: 220px;
+}
 
 @media (max-width: 1090px) {
     .offer-card .card-body {
-        height: 325px;
+        height: 335px;
+    }
+
+    .offer-card .card-body.en {
+        height: 240px;
     }
 }
 
 
 @media (max-width: 991px) {
     .offer-card .card-body {
+        height: auto;
+    }
+
+    .offer-card .card-body.en {
         height: auto;
     }
 }

@@ -1,4 +1,5 @@
 numeral.locale('vi');
+const lang  = $('input[name="language"]').val();
 
 const noteTypes     = [500, 200, 100, 50, 20, 10, 5, 2, 1];
 const budgetTable   = [
@@ -23,9 +24,18 @@ $('#btn-calculate').on('click', function () {
     $('.redpacket-calculator-factors .help-block').hide();
 
     if (!$('input[name="budget"]').val() && $('input[name="budget"]').val() !== 0) {
+        if (lang == 'en') {
+            $('.input-budget .help-block').text('*You haven\'t enter your budget').fadeIn();
+            return;
+        }
         $('.input-budget .help-block').text('*Bạn chưa nhập ngân sách!').fadeIn();
         return;
     } else if (!budget || budget < 0) {
+        if (lang == 'en') {
+            $('.input-budget .help-block').text('*Your budget is not valid').fadeIn();
+            return;
+        }
+
         $('.input-budget .help-block').text('*Số tiền chưa hợp lệ!').fadeIn();
         return;
     }
@@ -37,7 +47,7 @@ $('#btn-calculate').on('click', function () {
     let budgetTableIndex;
     let isValid     = false;
 
-    $('.bugdet-factor input').each(function () {
+    $('.budget-factor input').each(function () {
         const key   = $(this).attr('name');
         const val   = $(this).val() || 0;
 
@@ -94,19 +104,22 @@ $('#btn-calculate').on('click', function () {
     $('input[name="suggest-budget"]')
         .val(numeral(calTotal(quantity, amount)).format('0,0') + ' VND')
     $('.suggest-budget').fadeIn();
+    $('.redpacket-calculator-result-note').fadeIn();
 
     $(this).hide();
     $('#btn-recalculate').fadeIn();
+
 })
 
 
 $('#btn-recalculate').on('click', function () {
-    // $('.bugdet-factor input').val('');
+    // $('.budget-factor input').val('');
 
     $('.budget-amount').hide();
-    $('.bugdet-factor .controller').fadeIn();
+    $('.budget-factor .controller').fadeIn();
     $('.redpacket-calculator-result').fadeOut();
     $('.suggest-budget').fadeOut();
+    $('.redpacket-calculator-result-note').fadeOut();
 
     $(this).hide();
     $('#btn-calculate').fadeIn();
@@ -120,7 +133,7 @@ function displayAmount(quantity, amount) {
         const qty   = quantity[key];
         const amt   = amount[key];
 
-        const $budgetAmount = $('#' + key).closest('.bugdet-factor').find('.budget-amount');
+        const $budgetAmount = $('#' + key).closest('.budget-factor').find('.budget-amount');
 
         if (qty === 1) {
             $budgetAmount.find('img').attr('src', './images/redpacket-1.png');
@@ -164,7 +177,7 @@ function displayNotes(notes) {
         $('.redpacket-amount-detail').prepend($div);
     });
 
-    $('.bugdet-factor .controller').hide();
+    $('.budget-factor .controller').hide();
     $('.redpacket-calculator-result').fadeIn();
 }
 
@@ -180,6 +193,11 @@ $('input[name="budget"]').on('change keydown keypress keyup mousedown click mous
     const val   = numeral($(this).val()).value();
 
     if (isNaN(val) || !val || val < 0) {
+        if (lang == 'en') {
+            $('.input-budget .help-block').text('*Your budget is not valid');
+            return;
+        }
+
         $('.input-budget .help-block').text('*Số tiền chưa hợp lệ!').fadeIn();
         return;
     }
@@ -190,7 +208,7 @@ $('input[name="budget"]').on('change keydown keypress keyup mousedown click mous
 
 
 $('.minus-one').on('click', function () {
-    $input  = $(this).closest('.bugdet-factor').find('input[type="text"]');
+    $input  = $(this).closest('.budget-factor').find('input[type="text"]');
 
     const curVal    = parseInt($input.val()) || 0;
     $input.val(curVal - 1 >= 0 ? curVal - 1 : 0);
@@ -198,7 +216,7 @@ $('.minus-one').on('click', function () {
 
 
 $('.plus-one').on('click', function () {
-    $input  = $(this).closest('.bugdet-factor').find('input[type="text"]');
+    $input  = $(this).closest('.budget-factor').find('input[type="text"]');
 
     const curVal    = parseInt($input.val()) || 0;
     $input.val(curVal + 1);
