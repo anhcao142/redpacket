@@ -30,7 +30,7 @@ body {
         font-size: 1.2rem;
     }
 
-    div, p {
+    div, p, a {
         font-size: 0.9rem;
     }
 }
@@ -41,6 +41,7 @@ body {
 
 a.color-red:hover {
     color: #d60a1e;
+    text-decoration: underline;
 }
 
 .select-language {
@@ -70,7 +71,7 @@ a.color-red:hover {
 }
 
 #hero {
-    background-position: center center;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 450px;
@@ -92,19 +93,25 @@ a.color-red:hover {
     font-weight: bold;
     margin: 0;
     font-size: 2.5rem;
-    text-shadow: 0px 0px 5px rgba(150, 150, 150, 0.7);
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 991px) {
+    #hero {
+        height: 350px;
+    }
 }
 
 
 @media (max-width: 767px) {
     #hero {
         height: 200px;
-        background-size: 125% auto;
+        background-size: 100% auto;
     }
-
 
     #hero .hero-caption h1 {
         font-size: 1.5rem;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
     }
 
     #hero .hero-caption {
@@ -114,7 +121,6 @@ a.color-red:hover {
 }
 
 #introduction {
-    margin-top: 10px;
     position: relative;
     overflow: hidden;
     color: #535353;
@@ -122,31 +128,40 @@ a.color-red:hover {
 
 .intro-branch {
     position: absolute;
-    padding: 45px 0;
+    padding: 30px 0;
     left: 0;
-    // bottom: 0;
-    width: 200px;
+    width: 170px;
     z-index: 0;
 }
 
 .intro-content {
-    padding: 45px 0;
+    padding: 45px 100px;
     z-index: 100;
     position: relative;
+}
+
+@media (max-width: 991px) {
+    .intro-branch {
+        width: 140px;
+        padding: 35px 0;
+    }
+
+    .intro-content {
+        padding: 35px 60px;
+    }
 }
 
 @media (max-width: 767px) {
     .intro-branch {
         padding: 0;
-        padding-top: 0px;
+        padding-top: 5px;
         height: auto;
         width: 25%;
         left: -20px;
     }
 
     .intro-content {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding: 30px 40px;
         font-size: 0.9rem;
     }
 }
@@ -182,7 +197,6 @@ a.color-red:hover {
 }
 
 .redpacket-calculator-detail .input-budget {
-    min-height: 120px;
     margin-bottom: 30px;
 }
 
@@ -227,8 +241,8 @@ a.color-red:hover {
 }
 
 .redpacket-calculator-factors {
-    padding-top: 20px;
     padding-left: 15px;
+    padding-bottom: 30px;
 }
 
 #redpacket-calculator .space {
@@ -236,7 +250,7 @@ a.color-red:hover {
 }
 
 .redpacket-calculator-result {
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 
@@ -286,6 +300,10 @@ a.color-red:hover {
         // background-size: cover;
     }
 
+    .redpacket-calculator-detail .input-budget {
+        margin-bottom: 10px;
+    }
+
     .redpacket-calculator-detail .input-budget input {
         max-width: 100%;
     }
@@ -304,7 +322,7 @@ a.color-red:hover {
     }
 
     .redpacket-calculator-result {
-        padding-top: 20px;
+        padding-top: 0px;
         padding-left: 0px;
         padding-right: 0px;
     }
@@ -331,6 +349,16 @@ a.color-red:hover {
         max-width: 100%;
     }
 }
+
+@media (max-width: 460px) {
+    .redpacket-calculator-detail {
+        padding-bottom: 170px !important;
+        background-size: 120% auto;
+        padding: 25px 20px;
+        // background-size: cover;
+    }
+}
+
 
 .redpacket-amount-detail {
     background-color: white;
@@ -422,12 +450,13 @@ a.color-red:hover {
 
 
 .redpacket-calculator-submit button {
-    padding: 7px 40px;
+    padding: 10px 50px;
     background-color: #da0010;
     color: white;
     border: none;
     border-radius: 0;
     cursor: pointer;
+    font-size: 1.2rem;
 }
 
 @media (max-width: 767px) {
@@ -450,7 +479,8 @@ a.color-red:hover {
     }
 
     .redpacket-calculator-submit button {
-        padding: 7px 20px;
+        padding: 10px 40px;
+        font-size: 1rem;
     }
 
     .redpacket-calculator-detail .budget-factor .plus-one {
@@ -511,22 +541,26 @@ a.color-red:hover {
     background-position: center;
     background-size: cover;
     padding: 25px;
-    font-size: 19px;
     font-weight: 200;
     color: #4c4c4c;
-    height: 280px;
+    height: 260px;
 }
 
 .offer-card .card-body.en {
     height: 220px;
 }
 
-@media (max-width: 1090px) {
+.offer-card .card-link {
+}
+
+@media (max-width: 1170px) {
     .offer-card .card-body {
-        height: 335px;
+        padding: 15px;
+        height: 280px;
     }
 
     .offer-card .card-body.en {
+        padding: 15px;
         height: 240px;
     }
 }

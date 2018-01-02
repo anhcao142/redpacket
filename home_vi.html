@@ -33,21 +33,23 @@
   <section id="introduction" style="background-image: url('./images/intro_bg.jpg')">
     <img class="intro-branch" src="./images/branch.png">
     <div class="container">
-      <div class="intro-content text-center">
-        Trao gửi niềm vui trong mỗi phong bao lì xì may mắn và lan tỏa yêu thương Tết này cùng HSBC!
-        <br>
-        Bạn có thể linh hoạt chọn ngân sách & đối tượng theo ý muốn.
-        <br>
+      <div class="intro-content text-justify">
+        <p>
+          <strong>
+            Trao gửi niềm vui trong mỗi phong bao lì xì may mắn và lan tỏa yêu thương Tết này cùng HSBC!
+          </strong>
+        </p>
+        <span class="text-justify">
+          Bạn có thể linh hoạt chọn ngân sách & đối tượng theo ý muốn.
         Sau đó, hãy để Công cụ Lì Xì HSBC tính toán mức tiền mừng tuổi tối ưu dành cho bạn bè và người thân của bạn.
-        <br>
-        Quan trọng nhất, hãy cùng người thân chia sẻ những khoảnh khắc Năm Mới ngọt ngào cùng những điểm ưu đãi tuyệt vời của HSBC bạn nhé!
+        </span>
       </div>
     </div>
   </section>
   <section id="redpacket-calculator">
     <div class="inner-content text-center">
-      <h1 class="redpacket-title color-red">BẢNG TÍNH TIỀN LÌ XÌ MAY MẮN</h1>
-      <p class="redpacket-description">Nhập ngân sách của bạn và xem mùa Tết này bạn nên dành bao nhiêu tiền lì xì cho người thân, bạn bè.</p>
+      <h1 class="redpacket-title color-red">LÌ XÌ MAY MẮN</h1>
+      <p class="redpacket-description">Nhập ngân sách của bạn và HSBC sẽ gợi ý cho bạn mức lì xì tối ưu cho từng người thân hoặc bạn bè của bạn</p>
 
       <div class="redpacket-calculator-detail text-left" style="background-image: url('./images/backgift.jpg')">
         <div class="input-budget row">
@@ -60,24 +62,37 @@
           <div class="col-lg-4 col-sm-6">
             <div class="form-group">
               <label class="color-red" for="bugdet">Ngân sách của bạn</label>
-              <div class="currency-unit">
+              <div class="currency-unit" style="margin-bottom: 10px;">
                 <span>VND</span>
                 <input class="form-control" id="budget" name="budget" type="text" placeholder="Nhập ngân sách của bạn">
               </div>
-              <div class="help-block text-danger collapse" style="margin-top: 10px; font-size: 0.9rem;">
-                Số tiền không hợp lệ
+              <div class="space">
+                <div class="help-block text-danger collapse" style="font-size: 0.9rem;">
+                  Số tiền không hợp lệ
+                </div>
               </div>
             </div>
           </div>
           <div class="offset-lg-2 col-lg-4 col-sm-6">
             <div class="form-group suggest-budget collapse">
               <label class="color-red" for="suggest-budget">Ngân sách chúng tôi đề nghị</label>
-              <input class="form-control" id="suggest-budget" name="suggest-budget" type="text" value="800" readonly>
+              <div class="currency-unit" style="margin-bottom: 10px;">
+                <span>VND</span>
+                <input class="form-control" id="suggest-budget" name="suggest-budget" type="text" value="800" readonly>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="redpacket-calculator-factors">
+          <div class="row">
+            <div class="form-group">
+              <label class="color-red" style="margin-bottom: 0; font-weight: bold">Số lượng bạn bè/người thân bạn dự định lì xì</label>
+              <div>
+                <small><i>Bạn cần điền số lượng người thân/bạn bè vào từng ô tương ứng. Nếu bạn dự định không lì xì cho đối tượng nào thì vui lòng điền “0” vào ô số lượng tương ứng</i></small>
+              </div>
+            </div>
+          </div>
           <div class="row">
             <div class="col-lg-4 column">
               <div class="form-group row budget-factor">
@@ -211,7 +226,9 @@
                 </div>
               </div>
             </div>
-            <div class="col-12">
+          </div>
+          <div class="row">
+            <div class="space">
               <div class="help-block text-danger collapse" style="font-size: 0.9rem;">
                 *Bạn chưa chọn người nhận
               </div>
@@ -220,7 +237,7 @@
         </div>
 
         <div class="redpacket-calculator-result collapse">
-          <p><strong>Chi tiết số tiền may mắn mà bạn cần chuẩn bị</strong></p>
+          <p><strong>Các mệnh giá tiền mà bạn cần phải chuẩn bị</strong></p>
           <div class="redpacket-amount-detail row">
             <!-- <div class="col-sm-3">
               <div>100.000VND</div>
@@ -259,9 +276,11 @@
             <div class="card-img-top" style="background-image: url('./images/thumbnail-1.jpg')"></div>
           </a>
           <div class="card-body" style="background-image: url('./images/blur-1.jpg')">
+            <h5 class="card-title">Mua sắm trả góp</h5>
             <p class="card-text">
-              <a  style="color: #535353;" href="https://www.hsbc.com.vn/1/2/personal/the_tin_dung_the_thanh_toan_quoc_te/instalmentplan">Hãy bắt đầu bằng việc sắm sửa, trang hoàng nhà cửa với ưu đãi trả góp 0% lãi suất kỳ hạn đến 12 tháng</a>
+              Hãy bắt đầu bằng việc sắm sửa, trang hoàng nhà cửa với ưu đãi trả góp 0% lãi suất kỳ hạn đến 12 tháng
             </p>
+            <a class="card-link color-red" href="https://www.hsbc.com.vn/1/2/personal/the_tin_dung_the_thanh_toan_quoc_te/instalmentplan">Tìm hiểu thêm</a>
           </div>
         </div>
       </div>
@@ -269,9 +288,11 @@
         <div class="card offer-card">
           <div class="card-img-top" style="background-image: url('./images/thumbnail-2.jpg')"></div>
           <div class="card-body" style="background-image: url('./images/blur-2.jpg')">
+            <h5 class="card-title">Du lịch</h5>
             <p class="card-text">
-              <a style="color: #535353;" href="https://www.hsbc.com.vn/1/2/personal/promotion/uu-dai-du-lich">Đón năm mới cùng gia đình và bạn bè bằng hành trình khám phá những vùng đất mới với ưu đãi đến 35% vé máy bay, khách sạn nội địa và quốc tế</a>
+              Đón năm mới cùng gia đình và bạn bè bằng hành trình khám phá những vùng đất mới với ưu đãi đến 35% vé máy bay, khách sạn nội địa và quốc tế
             </p>
+            <a class="card-link color-red" href="https://www.hsbc.com.vn/1/2/personal/promotion/uu-dai-du-lich">Tìm hiểu thêm</a>
           </div>
         </div>
       </div>
@@ -279,9 +300,11 @@
         <div class="card offer-card">
           <div class="card-img-top" style="background-image: url('./images/thumbnail-3.jpg')"></div>
           <div class="card-body" style="background-image: url('./images/blur-3.jpg')">
+            <h5 class="card-title">Ưu đãi Happy Weekend</h5>
             <p class="card-text">
-              <a href="https://www.hsbc.com.vn/1/2/c-9">Mỗi cuối tuần thêm hứng khởi với ưu đãi tuyệt vời từ HSBC Happy Weekend</a>
+              Mỗi cuối tuần thêm hứng khởi với ưu đãi tuyệt vời từ HSBC Happy Weekend
             </p>
+            <a class="card-link color-red" href="https://www.hsbc.com.vn/1/2/c-9">Tìm hiểu thêm</a>
           </div>
         </div>
       </div>
@@ -289,9 +312,11 @@
         <div class="card offer-card">
           <div class="card-img-top" style="background-image: url('./images/thumbnail-4.jpg')"></div>
           <div class="card-body" style="background-image: url('./images/blur-4.jpg')">
+            <h5 class="card-title">Ưu đãi Home & Away/h5>
             <p class="card-text">
-              <a href="https://www.hsbc.com.vn/1/2/personal/the_tin_dung_the_thanh_toan_quoc_te/home_and_away?changelanguage.language=vi&changelanguage.country=VN&chglang.x=vi">Và vô vàn lựa chọn hấp dẫn khác cho ăn uống, thư giãn, giải trí của HSBC Home & Away</a>
+              Và vô vàn lựa chọn hấp dẫn khác cho ăn uống, thư giãn, giải trí của HSBC Home & Away
             </p>
+            <a class="card-link color-red" href="https://www.hsbc.com.vn/1/2/personal/the_tin_dung_the_thanh_toan_quoc_te/home_and_away?changelanguage.language=vi&changelanguage.country=VN&chglang.x=vi">Tìm hiểu thêm</a>
           </div>
         </div>
       </div>

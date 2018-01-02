@@ -102,7 +102,7 @@ $('#btn-calculate').on('click', function () {
     displayAmount(quantity, amount);
 
     $('input[name="suggest-budget"]')
-        .val(numeral(calTotal(quantity, amount)).format('0,0') + ' VND')
+        .val(numeral(calTotal(quantity, amount)).format('0,0'))
     $('.suggest-budget').fadeIn();
     $('.redpacket-calculator-result-note').fadeIn();
 
@@ -168,8 +168,13 @@ function displayNotes(notes) {
             style: 'width: 20px; margin-right: 10px; margin-top: -3px;',
         }).appendTo($divWrapper);
 
+        let unit = 'tờ';
+        if (lang === 'en') {
+            unit = 'sheet';
+        }
+
         const $span = $('<span/>', {
-            text: numeral(parseInt(note) * 1000).format('0,0') + ' VND x ' + notes[note],
+            html: numeral(parseInt(note) * 1000).format('0,0') + ' VND x ' + notes[note] + ' ' + unit,
         }).appendTo($divWrapper);
 
         $divWrapper.appendTo($div);
