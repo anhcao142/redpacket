@@ -205,11 +205,16 @@ a.color-red:hover {
 }
 
 .redpacket-calculator-detail .input-budget input {
-    border: none;
+    border: 1px solid white;
     border-radius: 0;
     font-size: 0.9rem;
-    padding: 10px 14px;
+    padding: 9px 14px;
     max-width: 300px;
+    background-clip: unset;
+}
+
+.is-invalid {
+    border: 1px solid #dc3545 !important;
 }
 
 .redpacket-calculator-detail .currency-unit {
@@ -220,7 +225,7 @@ a.color-red:hover {
     position: absolute;
     left: 0;
     line-height: 1.4;
-    padding: 9px 10px;
+    padding: 10px 10px 0 10px;
 }
 
 .redpacket-calculator-detail .currency-unit input {

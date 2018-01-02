@@ -20,25 +20,10 @@ const budgetAdjustSequence = ['colleagues', 'friends', 'lover', 'grandchildren',
 
 $('#btn-calculate').on('click', function () {
     const budget    = numeral($('input[name="budget"]').val()).value() || 0;
-    $('.input-budget .help-block').text('*Bạn chưa nhập ngân sách!').hide();
     $('.redpacket-calculator-factors .help-block').hide();
 
-    if (!$('input[name="budget"]').val() && $('input[name="budget"]').val() !== 0) {
-        if (lang == 'en') {
-            $('.input-budget .help-block').text('*You haven\'t enter your budget').fadeIn();
-            return;
-        }
-        $('.input-budget .help-block').text('*Bạn chưa nhập ngân sách!').fadeIn();
-        return;
-    } else if (!budget || budget < 0) {
-        if (lang == 'en') {
-            $('.input-budget .help-block').text('*Your budget is not valid').fadeIn();
-            return;
-        }
-
-        $('.input-budget .help-block').text('*Số tiền chưa hợp lệ!').fadeIn();
-        return;
-    }
+    const isInputBudgetValid = validateInputBudget();
+    if (!isInputBudgetValid) return;
 
     const quantity  = {};
     const allNotes  = {};
@@ -58,6 +43,14 @@ $('#btn-calculate').on('click', function () {
 
     if (!isValid) {
         $('.redpacket-calculator-factors .help-block').fadeIn();
+
+        const redpacketFactorTop = $('.redpacket-calculator-factors').offset().top;
+        const curTop    = $('html, body').scrollTop();
+
+        if (curTop > redpacketFactorTop) {
+            $('html, body').animate({ scrollTop: redpacketFactorTop }, 200);
+        }
+
         return;
     }
 
@@ -192,12 +185,16 @@ let prevBudget  = 0;
 $('input[name="budget"]').on('change keydown keypress keyup mousedown click mouseup', function (e) {
     if (!$(this).val()) {
         $('.input-budget .help-block').fadeOut();
+        $('.input-budget input[name="budget"]').removeClass('is-invalid');
+
         return;
     }
 
     const val   = numeral($(this).val()).value();
 
     if (isNaN(val) || !val || val < 0) {
+        $('.input-budget input[name="budget"]').addClass('is-invalid');
+
         if (lang == 'en') {
             $('.input-budget .help-block').text('*Your budget is not valid');
             return;
@@ -208,8 +205,43 @@ $('input[name="budget"]').on('change keydown keypress keyup mousedown click mous
     }
 
     $('.input-budget .help-block').fadeOut();
+    $('.input-budget input[name="budget"]').removeClass('is-invalid');
     $(this).val(numeral(val).format('0,0'));
 })
+
+
+function validateInputBudget() {
+    $('.input-budget .help-block').hide();
+    $('.input-budget input[name="budget"]').removeClass('is-invalid');
+
+    let isValid = true;
+
+    if (!$('input[name="budget"]').val() && $('input[name="budget"]').val() !== 0) {
+        $('.input-budget input[name="budget"]').addClass('is-invalid');
+        isValid = false;
+
+        if (lang == 'en') {
+            $('.input-budget .help-block').text('*You haven\'t enter your budget').fadeIn();
+        } else {
+            $('.input-budget .help-block').text('*Bạn chưa nhập ngân sách!').fadeIn();
+        }
+    } else if (!budget || budget < 0) {
+        $('.input-budget input[name="budget"]').addClass('is-invalid');
+        isValid = false;
+
+        if (lang == 'en') {
+            $('.input-budget .help-block').text('*Your budget is not valid').fadeIn();
+        } else {
+            $('.input-budget .help-block').text('*Số tiền chưa hợp lệ!').fadeIn();
+        }
+    }
+
+    if (!isValid) {
+        $('html, body').animate({ scrollTop: $('.input-budget input[name="budget"]').offset().top - 40 }, 200);
+    }
+
+    return isValid;
+}
 
 
 $('.minus-one').on('click', function () {
