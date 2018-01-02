@@ -260,7 +260,7 @@ a.color-red:hover {
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 300px;
-        background-size: cover;
+        background-size: 100% auto;
     }
 
     .redpacket-amount-detail {
@@ -283,7 +283,7 @@ a.color-red:hover {
         padding-bottom: 300px !important;
         background-size: 130% auto;
         padding: 25px 20px;
-        background-size: cover;
+        // background-size: cover;
     }
 
     .redpacket-calculator-detail .input-budget input {
