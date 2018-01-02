@@ -431,7 +431,7 @@ a.color-red:hover {
     color: white;
     padding: 7px 0;
     font-size: 0.9rem;
-    font-weight: 200;
+    // font-weight: 300;
 }
 
 
