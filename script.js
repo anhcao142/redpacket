@@ -45,11 +45,7 @@ $('#btn-calculate').on('click', function () {
         $('.redpacket-calculator-factors .help-block').fadeIn();
 
         const redpacketFactorTop = $('.redpacket-calculator-factors').offset().top;
-        const curTop    = $('html, body').scrollTop();
-
-        if (curTop > redpacketFactorTop) {
-            $('html, body').animate({ scrollTop: redpacketFactorTop }, 200);
-        }
+        $('html, body').animate({ scrollTop: redpacketFactorTop }, 200);
 
         return;
     }
