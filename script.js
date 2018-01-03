@@ -182,7 +182,7 @@ function displayNotes(notes) {
 
 let prevBudget  = 0;
 
-$('input[name="budget"]').on('change keydown keypress keyup mousedown click mouseup', function (e) {
+$('input[name="budget"]').on('propertychange change keyup input paste blur', function (e) {
     if (!$(this).val()) {
         $('.input-budget .help-block').fadeOut();
         $('.input-budget input[name="budget"]').removeClass('is-invalid');
@@ -206,7 +206,9 @@ $('input[name="budget"]').on('change keydown keypress keyup mousedown click mous
 
     $('.input-budget .help-block').fadeOut();
     $('.input-budget input[name="budget"]').removeClass('is-invalid');
-    $(this).val(numeral(val).format('0,0'));
+
+    const value = numeral(val).format('0,0');
+    $(this).val(value);
 })
 
 
@@ -245,7 +247,7 @@ function validateInputBudget() {
 
 
 $('.minus-one').on('click', function () {
-    $input  = $(this).closest('.budget-factor').find('input[type="text"]');
+    $input  = $(this).closest('.budget-factor').find('input');
 
     const curVal    = parseInt($input.val()) || 0;
     $input.val(curVal - 1 >= 0 ? curVal - 1 : 0);
@@ -253,7 +255,7 @@ $('.minus-one').on('click', function () {
 
 
 $('.plus-one').on('click', function () {
-    $input  = $(this).closest('.budget-factor').find('input[type="text"]');
+    $input  = $(this).closest('.budget-factor').find('input');
 
     const curVal    = parseInt($input.val()) || 0;
     $input.val(curVal + 1);
