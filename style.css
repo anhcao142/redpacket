@@ -105,7 +105,7 @@ a.color-red:hover {
 
 @media (max-width: 767px) {
     #hero {
-        height: 200px;
+        height: 270px;
         background-size: 100% auto;
     }
 
