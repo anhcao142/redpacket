@@ -555,7 +555,7 @@ a.color-red:hover {
     }
 
     .redpacket-calculator-detail .budget-factor label {
-        font-size: 0.8rem !important;
+        font-size: 0.8rem;
         padding: 8px;
     }
 
@@ -582,6 +582,17 @@ a.color-red:hover {
 
     .redpacket-calculator-detail .budget-factor .plus-one img, .redpacket-calculator-detail .budget-factor .minus-one img {
         width: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .text-smaller {
+        font-size: 80% !important;
+    }
+
+    .redpacket-calculator-detail .budget-factor label {
+        font-size: 0.75rem;
+        padding-top: 9px;
     }
 }
 
