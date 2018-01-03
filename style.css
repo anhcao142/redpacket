@@ -33,6 +33,10 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0;
 }
 
+.text-smaller {
+    font-size: 80% !important;
+}
+
 @media (max-width: 767px) {
     h1 {
         font-size: 1.2rem;
@@ -223,6 +227,11 @@ a.color-red:hover {
     padding-bottom: 450px;
 }
 
+.redpacket-calculator-detail.en {
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
 .redpacket-calculator-detail .input-budget {
     margin-bottom: 30px;
 }
@@ -312,6 +321,15 @@ a.color-red:hover {
         padding-right: 25px;
     }
 
+    .redpacket-calculator-detail.en {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .text-smaller {
+        font-size: 75% !important;
+    }
+
     .redpacket-calculator-detail .budget-amount {
         font-size: 0.85rem;
     }
@@ -325,6 +343,15 @@ a.color-red:hover {
         padding-right: 20px;
         padding-bottom: 350px;
         background-size: 100% auto;
+    }
+
+    .text-smaller {
+        font-size: 85% !important;
+    }
+
+    .redpacket-calculator-detail.en {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .redpacket-amount-detail {
@@ -528,7 +555,7 @@ a.color-red:hover {
     }
 
     .redpacket-calculator-detail .budget-factor label {
-        font-size: 0.8rem;
+        font-size: 0.8rem !important;
         padding: 8px;
     }
 
@@ -656,6 +683,7 @@ a.color-red:hover {
 
     .offer-card .card-body.en {
         height: auto;
+        padding-bottom: 40px;
     }
 
     .offer-card .card-img-top.wide {
@@ -694,7 +722,7 @@ a.color-red:hover {
 
 @media (max-width: 576px) {
     .offer-card .card-img-top.wide {
-        height: 200px;
+        height: auto;
     }
 }
 
