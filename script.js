@@ -116,6 +116,10 @@ $('#btn-recalculate').on('click', function () {
 
 
 function displayAmount(quantity, amount) {
+    $('.budget-amount img').attr('src', '');
+    $('.budget-amount span').empty();
+
+
     Object.keys(amount).forEach(function (key) {
         if (!quantity[key]) return;
 
