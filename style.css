@@ -212,9 +212,10 @@ a.color-red:hover {
 }
 
 .redpacket-calculator-detail {
-    background-image: url('./images/pc/gift_1170x1218.jpg');
+    background-image: url('./images/pc/gift_1170x1218.jpg?time=123');
     background-position: center bottom;
     background-size: 100% auto;
+    background-color: #ffebf0;
     // background-size: cover;
     background-repeat: no-repeat;
     // height: 860px;
@@ -319,6 +320,10 @@ a.color-red:hover {
 
     .redpacket-calculator-factors {
         padding-right: 15px;
+    }
+
+    .input-budget input {
+        max-width: 100% !important;
     }
 }
 
