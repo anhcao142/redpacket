@@ -1,6 +1,10 @@
 numeral.locale('vi');
 const lang  = $('input[name="language"]').val();
 
+if (lang == 'en') {
+    numeral.locale('en');
+}
+
 const noteTypes     = [500, 200, 100, 50, 20, 10, 5, 2, 1];
 const budgetTable   = [
     { 'parents':  100, 'grandparents':  100, 'spouse': 100, 'children':  100, 'siblings':  20, 'grandchildren':  10, 'lover':  20, 'friends':  5, 'colleagues':  5 },
