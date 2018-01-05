@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Give lucky money, share eternal love | HSBC (Việt Nam)</title>
+  <title>Lì xì may mắn | HSBC (Việt Nam)</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./style.css?time=012029122017">
+  <link rel="stylesheet" href="./css/style.css?time=012029122017">
 </head>
 <body>
   <div id="fb-root"></div>
@@ -15,14 +15,13 @@
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
+    js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.11';
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
-  <input type="hidden" name='language' value='en'>
   <section id="header">
     <div class="select-language">
-        <a class="float-right select-language-btn" href="/home_vi.html">
-          Tiếng Việt&nbsp;
+        <a class="float-right select-language-btn" href="/index_en.html">
+          English&nbsp;
           <img src="images/arrow_down.jpg">
         </a>
         <div class="clearfix"></div>
@@ -33,9 +32,9 @@
     <div style="position: relative; height: 100%">
       <div class="hero-caption">
         <h1>
-          Give lucky money
+          Lì xì may mắn
           <br>
-          Share eternal love
+          Gắn kết yêu thương
         </h1>
       </div>
     </div>
@@ -45,43 +44,50 @@
     <div class="container">
       <div class="intro-content text-justify">
         <p>
-          <strong>Give the joy in each red envelop and spread love to your loved ones this Lunar New Year with HSBC!</strong>
+          <strong>
+            Trao gửi niềm vui trong mỗi phong bao lì xì may mắn và lan tỏa yêu thương Tết này cùng HSBC!
+          </strong>
         </p>
-        Now you can flexibly choose the budget and audience as you want.
-        Then let HSBC Red Packet Calculator calculates the best amount of money to give your family and friends this Lunar New Year.
+        <span class="text-justify">
+          Bạn có thể linh hoạt chọn ngân sách & đối tượng theo ý muốn.
+        Sau đó, hãy để Công cụ Lì Xì HSBC tính toán mức tiền mừng tuổi tối ưu dành cho người thân và bạn bè của bạn.
+        </span>
       </div>
     </div>
   </section>
   <section id="redpacket-calculator">
     <div class="inner-content text-center">
-      <h1 class="redpacket-title color-red">Red Packet Calculator</h1>
-      <p class="redpacket-description">Enter your budget and HSBC will suggest the most optimal amount of money you should give your family and friends this Lunar New Year.</p>
+      <h1 class="redpacket-title color-red">LÌ XÌ MAY MẮN</h1>
+      <p class="redpacket-description">Nhập ngân sách của bạn và HSBC sẽ gợi ý cho bạn mức lì xì tối ưu cho từng người thân hoặc bạn bè của bạn</p>
 
-      <div class="redpacket-calculator-detail en text-left">
+      <div class="redpacket-calculator-detail text-left">
         <div class="input-budget row">
           <div class="col-12">
             <div class="redpacket-calculator-result-note collapse">
               <img src="./images/giftbox.png" height="36" alt="">
-              <span class="color-red">Here is optimal amount of money to give your family and friends</span>
+              <span class="color-red">Mức lì xì năm mới tối ưu cho người thân và bạn bè của bạn</span>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6">
             <div class="form-group">
-              <label class="color-red" for="budget">Your budget</label>
+              <label class="color-red" for="bugdet">Ngân sách của bạn</label>
               <div class="currency-unit" style="margin-bottom: 10px;">
                 <span>VND</span>
-                <input class="form-control" id="budget" name="budget" type="tel" placeholder="Enter your budget">
+                <input class="form-control" id="budget" name="budget" type="tel" placeholder="Nhập ngân sách của bạn">
               </div>
               <div class="space">
-                <div class="help-block text-danger collapse" style=" font-size: 0.9rem;">
-                  *Your budget is not valid
+                <div class="help-block text-danger collapse" style="font-size: 0.9rem;">
+                  Số tiền không hợp lệ
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6">
             <div class="form-group suggest-budget collapse">
-              <label class="color-red" for="suggest-budget">Budget recommended</label>
+              <label class="color-red label-standard" for="suggest-budget">Ngân sách chúng tôi đề nghị</label>
+              <label class="color-red collapse label-error" for="suggest-budget">
+                Có vẻ ngân sách của bạn chưa được cân nhắc kỹ. Ngân sách tối ưu chúng tôi đề xuất là:
+              </label>
               <div class="currency-unit" style="margin-bottom: 10px;">
                 <span>VND</span>
                 <input class="form-control" id="suggest-budget" name="suggest-budget" type="text" value="800" readonly>
@@ -93,16 +99,16 @@
         <div class="redpacket-calculator-factors">
           <div class="row">
             <div class="form-group">
-              <label class="color-red" style="margin-bottom: 0; font-weight: bold">Number of friends/ family you want to gift</label>
+              <label class="color-red" style="margin-bottom: 0; font-weight: bold">Số lượng người thân/ bạn bè bạn dự định lì xì</label>
               <div>
-                <small><i>You need to enter number of friends/ family into respectively boxes. For anyone you don't want to gift, please leave "0" in the box.</i></small>
+                <small><i>Bạn cần điền số lượng người thân/ bạn bè vào từng ô tương ứng. Nếu bạn dự định không lì xì cho đối tượng nào thì vui lòng điền “0” vào ô số lượng tương ứng.</i></small>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col-lg-4 column">
-              <div class="form-group row budget-factor en">
-                <label class="col-4 col-sm-4 col-form-label" for="grandparents">Grandparents</label>
+              <div class="form-group row budget-factor">
+                <label class="col-4 col-sm-4 col-form-label" for="grandparents">Ông bà</label>
                 <div class="col-8 col-sm-8 column">
                   <div class="budget-amount collapse">
                     <span></span>
@@ -112,11 +118,11 @@
                     <div class="minus-one"><img src="./images/arrow-left.png"></div>
                     <div class="plus-one"><img src="./images/arrow-right.png"></div>
                   </div>
-                  <input class="form-control" value="0" name="grandparents" id="grandparents" type="tel">
+                  <input class="form-control" value="0" name="grandparents" id="grandparents" type="number">
                 </div>
               </div>
-              <div class="form-group row budget-factor en">
-                <label class="col-4 col-sm-4 col-form-label" for="parents">Parents</label>
+              <div class="form-group row budget-factor">
+                <label class="col-4 col-sm-4 col-form-label" for="parents">Cha mẹ</label>
                 <div class="col-8 col-sm-8 column" style="position: relative;">
                   <div class="budget-amount collapse">
                     <span></span>
@@ -126,11 +132,11 @@
                     <div class="minus-one"><img src="./images/arrow-left.png"></div>
                     <div class="plus-one"><img src="./images/arrow-right.png"></div>
                   </div>
-                  <input class="form-control" value="0" name="parents" id="parents" type="tel">
+                  <input class="form-control" value="0" name="parents" id="parents" type="number">
                 </div>
               </div>
-              <div class="form-group row budget-factor en">
-                <label class="col-4 col-sm-4 col-form-label" for="spouse">Husband/Wife</label>
+              <div class="form-group row budget-factor">
+                <label class="col-4 col-sm-4 col-form-label" for="spouse">Bạn đời</label>
                 <div class="col-8 col-sm-8 column">
                   <div class="budget-amount collapse">
                     <span></span>
@@ -140,57 +146,13 @@
                     <div class="minus-one"><img src="./images/arrow-left.png"></div>
                     <div class="plus-one"><img src="./images/arrow-right.png"></div>
                   </div>
-                  <input class="form-control" value="0" name="spouse" id="spouse" type="tel">
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 column">
-              <div class="form-group row budget-factor en">
-                <label class="col-4 col-sm-4 col-form-label" for="children">Children</label>
-                <div class="col-8 col-sm-8 column">
-                  <div class="budget-amount collapse">
-                    <span></span>
-                    <img src="" alt="">
-                  </div>
-                  <div class="controller">
-                    <div class="minus-one"><img src="./images/arrow-left.png"></div>
-                    <div class="plus-one"><img src="./images/arrow-right.png"></div>
-                  </div>
-                  <input class="form-control" value="0" name="children" id="children" type="tel">
-                </div>
-              </div>
-              <div class="form-group row budget-factor en">
-                <label class="col-4 col-sm-4 col-form-label" for="siblings">Siblings</label>
-                <div class="col-8 col-sm-8 column">
-                  <div class="budget-amount collapse">
-                    <span></span>
-                    <img src="" alt="">
-                  </div>
-                  <div class="controller">
-                    <div class="minus-one"><img src="./images/arrow-left.png"></div>
-                    <div class="plus-one"><img src="./images/arrow-right.png"></div>
-                  </div>
-                  <input class="form-control" value="0" name="siblings" id="siblings" type="tel">
-                </div>
-              </div>
-              <div class="form-group row budget-factor en">
-                <label class="col-4 col-sm-4 col-form-label text-smaller" for="grandchildren">Nieces/Nephews</label>
-                <div class="col-8 col-sm-8 column">
-                  <div class="budget-amount collapse">
-                    <span></span>
-                    <img src="" alt="">
-                  </div>
-                  <div class="controller">
-                    <div class="minus-one"><img src="./images/arrow-left.png"></div>
-                    <div class="plus-one"><img src="./images/arrow-right.png"></div>
-                  </div>
-                  <input class="form-control" value="0" name="grandchildren" id="grandchildren" type="tel">
+                  <input class="form-control" value="0" name="spouse" id="spouse" type="number">
                 </div>
               </div>
             </div>
             <div class="col-lg-4 column">
-              <div class="form-group row budget-factor en">
-                <label class="col-4 col-sm-4 col-form-label" for="lover">Boy/Girlfriend</label>
+              <div class="form-group row budget-factor">
+                <label class="col-4 col-sm-4 col-form-label" for="children">Con</label>
                 <div class="col-8 col-sm-8 column">
                   <div class="budget-amount collapse">
                     <span></span>
@@ -200,11 +162,11 @@
                     <div class="minus-one"><img src="./images/arrow-left.png"></div>
                     <div class="plus-one"><img src="./images/arrow-right.png"></div>
                   </div>
-                  <input class="form-control" value="0" name="lover" id="lover" type="tel">
+                  <input class="form-control" value="0" name="children" id="children" type="number">
                 </div>
               </div>
-              <div class="form-group row budget-factor en">
-                <label class="col-4 col-sm-4 col-form-label" for="friends">Friends</label>
+              <div class="form-group row budget-factor">
+                <label class="col-4 col-sm-4 col-form-label" for="siblings">Anh chị em</label>
                 <div class="col-8 col-sm-8 column">
                   <div class="budget-amount collapse">
                     <span></span>
@@ -214,11 +176,11 @@
                     <div class="minus-one"><img src="./images/arrow-left.png"></div>
                     <div class="plus-one"><img src="./images/arrow-right.png"></div>
                   </div>
-                  <input class="form-control" value="0" name="friends" id="friends" type="tel">
+                  <input class="form-control" value="0" name="siblings" id="siblings" type="number">
                 </div>
               </div>
-              <div class="form-group row budget-factor en">
-                <label class="col-4 col-sm-4 col-form-label" for="colleagues">Colleagues</label>
+              <div class="form-group row budget-factor">
+                <label class="col-4 col-sm-4 col-form-label" for="grandchildren">Cháu</label>
                 <div class="col-8 col-sm-8 column">
                   <div class="budget-amount collapse">
                     <span></span>
@@ -228,7 +190,51 @@
                     <div class="minus-one"><img src="./images/arrow-left.png"></div>
                     <div class="plus-one"><img src="./images/arrow-right.png"></div>
                   </div>
-                  <input class="form-control" value="0" name="colleagues" id="colleagues" type="tel">
+                  <input class="form-control" value="0" name="grandchildren" id="grandchildren" type="number">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 column">
+              <div class="form-group row budget-factor">
+                <label class="col-4 col-sm-4 col-form-label" for="lover">Người yêu</label>
+                <div class="col-8 col-sm-8 column">
+                  <div class="budget-amount collapse">
+                    <span></span>
+                    <img src="" alt="">
+                  </div>
+                  <div class="controller">
+                    <div class="minus-one"><img src="./images/arrow-left.png"></div>
+                    <div class="plus-one"><img src="./images/arrow-right.png"></div>
+                  </div>
+                  <input class="form-control" value="0" name="lover" id="lover" type="number">
+                </div>
+              </div>
+              <div class="form-group row budget-factor">
+                <label class="col-4 col-sm-4 col-form-label" for="friends">Bạn bè</label>
+                <div class="col-8 col-sm-8 column">
+                  <div class="budget-amount collapse">
+                    <span></span>
+                    <img src="" alt="">
+                  </div>
+                  <div class="controller">
+                    <div class="minus-one"><img src="./images/arrow-left.png"></div>
+                    <div class="plus-one"><img src="./images/arrow-right.png"></div>
+                  </div>
+                  <input class="form-control" value="0" name="friends" id="friends" type="number">
+                </div>
+              </div>
+              <div class="form-group row budget-factor">
+                <label class="col-4 col-sm-4 col-form-label" for="colleagues">Đồng nghiệp</label>
+                <div class="col-8 col-sm-8 column">
+                  <div class="budget-amount collapse">
+                    <span></span>
+                    <img src="" alt="">
+                  </div>
+                  <div class="controller">
+                    <div class="minus-one"><img src="./images/arrow-left.png"></div>
+                    <div class="plus-one"><img src="./images/arrow-right.png"></div>
+                  </div>
+                  <input class="form-control" value="0" name="colleagues" id="colleagues" type="number">
                 </div>
               </div>
             </div>
@@ -236,14 +242,14 @@
           <div class="row">
             <div class="space">
               <div class="help-block text-danger collapse" style="font-size: 0.9rem;">
-                *You haven't select any friends or family
+                *Bạn chưa chọn người nhận
               </div>
             </div>
           </div>
         </div>
 
         <div class="redpacket-calculator-result collapse">
-          <p><strong>Detailed amount of red envelop you need to prepare</strong></p>
+          <p><strong>Các mệnh giá tiền mà bạn cần phải chuẩn bị</strong></p>
           <div class="redpacket-amount-detail row">
             <!-- <div class="col-sm-3">
               <div>100.000VND</div>
@@ -258,13 +264,13 @@
               <div>100.000VND</div>
             </div> -->
           </div>
-          <small class="text-muted"><i>*This result is for reference only.</i></small>
+          <small class="text-muted"><i>*Kết quả này chỉ mang tính chất tham khảo</i></small>
         </div>
 
         <div class="redpacket-calculator-submit">
-          <div class="fb-share-button float-right" data-href="https://www.hsbc.com.vn/1/2/personal_en/credit_card_debit_card/instalmentplan?changelanguage.language=en&changelanguage.country=US&chglang.x=en" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.hsbc.com.vn/1/2/personal_en/credit_card_debit_card/instalmentplan?changelanguage.language=en&changelanguage.country=US&chglang.x=en&amp;src=sdkpreparse">Share</a></div>
-          <button id="btn-calculate">Calculate</button>
-          <button id="btn-recalculate" class="collapse">Recalculate</button>
+          <div class="fb-share-button float-right" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={url}&amp;src=sdkpreparse">Chia sẻ</a></div>
+          <button id="btn-calculate">Tính ngay</button>
+          <button id="btn-recalculate" class="collapse">Tính toán lại</button>
         </div>
 
       </div>
@@ -272,105 +278,105 @@
   </section>
   <section id="special-offer">
     <div class="offer-banner text-center">
-      <h1 class="color-red">Lunar New Year 2018 Privilege Offers</h1>
-      <div class="offer-banner-description">Make it an unforgettable Tet with endless promotions from HSBC</div>
+      <h1 class="color-red">ƯU ĐÃI ĐẶC BIỆT TẾT 2018</h1>
+      <div class="offer-banner-description">Chia sẻ Tết ý nghĩa bên những người thương yêu của bạn cùng ưu đãi đặc quyền từ HSBC</div>
     </div>
     <div class="space"></div>
     <div class="row">
       <div class="col-lg-3">
         <div class="card offer-card">
-          <a href="https://www.hsbc.com.vn/1/2/personal_en/credit_card_debit_card/instalmentplan?changelanguage.language=en&changelanguage.country=US&chglang.x=en" target="_blank">
-            <div class="card-img-top d-none d-lg-block" style="background-image: url('./images/pc/offer_270x200_1.jpg')">
-            </div>
+          <a href="https://www.hsbc.com.vn/1/2/personal/the_tin_dung_the_thanh_toan_quoc_te/instalmentplan" target="_blank">
+            <div class="card-img-top d-none d-lg-block" style="background-image: url('./images/pc/offer_270x200_1.jpg')"></div>
             <div class="card-img-top wide d-lg-none" style="background-image: url('./images/thumbnail-1.jpg')">
               <img class="d-block d-sm-none" src="./images/mobile/offer_750x400_1.jpg" width="100%">
             </div>
           </a>
-          <div class="card-body en" style="background-image: url('./images/blur-1.jpg')">
-            <h5 class="card-title">Installment Plan</h5>
+          <div class="card-body" style="background-image: url('./images/blur-1.jpg')">
+            <h5 class="card-title">Mua sắm trả góp</h5>
             <p class="card-text">
-              Redecorate your home for the holiday season with a <span class="color-red text-bold">0% interest</span> rate installment plan.
-              Shop now.</a>
+              Hãy bắt đầu bằng việc sắm sửa, trang hoàng nhà cửa với ưu đãi trả góp <span class="color-red text-bold">0% lãi suất</span> kỳ hạn đến 12 tháng
             </p>
             <div class="float-bottom">
-              <a class="card-link" href="https://www.hsbc.com.vn/1/2/personal_en/credit_card_debit_card/instalmentplan?changelanguage.language=en&changelanguage.country=US&chglang.x=en" target="_blank">
-                Find out more
+              <a class="card-link" href="https://www.hsbc.com.vn/1/2/personal/the_tin_dung_the_thanh_toan_quoc_te/instalmentplan" target="_blank">
+                Tìm hiểu thêm
                 <i class="fa fa-angle-right color-red"></i>
               </a>
-
-              <div class="fb-share-button float-right" data-href="https://www.hsbc.com.vn/1/2/personal_en/credit_card_debit_card/instalmentplan?changelanguage.language=en&changelanguage.country=US&chglang.x=en" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.hsbc.com.vn/1/2/personal_en/credit_card_debit_card/instalmentplan?changelanguage.language=en&changelanguage.country=US&chglang.x=en&amp;src=sdkpreparse">Share</a></div>
+              <div class="fb-share-button float-right" data-href="https://www.hsbc.com.vn/1/2/personal/the_tin_dung_the_thanh_toan_quoc_te/instalmentplan" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.hsbc.com.vn%2F1%2F2%2Fpersonal%2Fthe_tin_dung_the_thanh_toan_quoc_te%2Finstalmentplan&amp;src=sdkpreparse">Chia sẻ</a></div>
             </div>
           </div>
         </div>
       </div>
       <div class="col-lg-3">
         <div class="card offer-card">
-          <a href="https://www.hsbc.com.vn/1/2/ce-21" target="_blank">
+          <a href="https://www.hsbc.com.vn/1/2/personal/promotion/uu-dai-du-lich" target="_blank">
             <div class="card-img-top d-none d-lg-block" style="background-image: url('./images/pc/offer_270x200_2.jpg')">
             </div>
             <div class="card-img-top wide d-lg-none" style="background-image: url('./images/thumbnail-2.jpg')">
               <img class="d-block d-sm-none" src="./images/mobile/offer_750x400_2.jpg" width="100%">
             </div>
           </a>
-          <div class="card-body en" style="background-image: url('./images/blur-2.jpg')">
-            <h5 class="card-title">Travel</h5>
+          <div class="card-body" style="background-image: url('./images/blur-2.jpg')">
+            <h5 class="card-title">Du lịch</h5>
             <p class="card-text">
-              Save on your New Year travels with discounts of <span class="color-red text-bold">up to 35%</span> on domestic and international airfares.
+              Đón năm mới cùng gia đình và bạn bè bằng hành trình khám phá những vùng đất mới với ưu đãi <span class="color-red text-bold">đến 35%</span> vé máy bay, khách sạn nội địa và quốc tế
             </p>
             <div class="float-bottom">
-              <a class="card-link" href="https://www.hsbc.com.vn/1/2/ce-21" target="_blank">
-                Find out more
+              <a class="card-link" href="https://www.hsbc.com.vn/1/2/personal/promotion/uu-dai-du-lich" target="_blank">
+                Tìm hiểu thêm
                 <i class="fa fa-angle-right color-red"></i>
               </a>
-              <div class="fb-share-button float-right" data-href="https://www.hsbc.com.vn/1/2/ce-21" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.hsbc.com.vn/1/2/ce-21&amp;src=sdkpreparse">Share</a></div>
+              <div class="fb-share-button float-right" data-href="https://www.hsbc.com.vn/1/2/personal/promotion/uu-dai-du-lich" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.hsbc.com.vn%2F1%2F2%2Fpersonal%2Fpromotion%2Fuu-dai-du-lich&amp;src=sdkpreparse">Chia sẻ</a></div>
             </div>
           </div>
         </div>
       </div>
       <div class="col-lg-3">
         <div class="card offer-card">
-          <a href="https://www.hsbc.com.vn/1/2/ce-9" target="_blank">
+          <a href="https://www.hsbc.com.vn/1/2/c-9" target="_blank">
             <div class="card-img-top d-none d-lg-block" style="background-image: url('./images/pc/offer_270x200_3.jpg')">
             </div>
             <div class="card-img-top wide d-lg-none" style="background-image: url('./images/thumbnail-3.jpg')">
               <img class="d-block d-sm-none" src="./images/mobile/offer_750x400_3.jpg" width="100%">
             </div>
           </a>
-          <div class="card-body en" style="background-image: url('./images/blur-3.jpg')">
-            <h5 class="card-title">HSBC Happy Weekend</h5>
+
+          <div class="card-body" style="background-image: url('./images/blur-3.jpg')">
+            <h5 class="card-title">Ưu đãi Happy Weekend</h5>
             <p class="card-text">
-              Kick off every weekend with amazing deals from <span class="color-red text-bold">HSBC Happy Weekend</span>.
+              Mỗi cuối tuần thêm hứng khởi với ưu đãi tuyệt vời từ <span class="color-red text-bold">HSBC Happy Weekend</span>
             </p>
             <div class="float-bottom">
-              <a class="card-link" href="https://www.hsbc.com.vn/1/2/ce-9" target="_blank">
-                Find out more
+              <a class="card-link" href="https://www.hsbc.com.vn/1/2/c-9" target="_blank">
+                Tìm hiểu thêm
                 <i class="fa fa-angle-right color-red"></i>
               </a>
-              <div class="fb-share-button float-right" data-href="https://www.hsbc.com.vn/1/2/ce-9" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.hsbc.com.vn/1/2/ce-9&amp;src=sdkpreparse">Share</a></div>
+              <div class="fb-share-button float-right" data-href="https://www.hsbc.com.vn/1/2/c-9" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.hsbc.com.vn%2F1%2F2%2Fc-9&amp;src=sdkpreparse">Chia sẻ</a></div>
             </div>
           </div>
         </div>
       </div>
       <div class="col-lg-3">
         <div class="card offer-card">
-          <a href="https://www.hsbc.com.vn/1/2/personal_en/credit_card_debit_card/credit_card_home_away" target="_blank">
+          <a href="https://www.hsbc.com.vn/1/2/personal/the_tin_dung_the_thanh_toan_quoc_te/home_and_away?changelanguage.language=vi&changelanguage.country=VN&chglang.x=vi" target="_blank">
             <div class="card-img-top d-none d-lg-block" style="background-image: url('./images/pc/offer_270x200_4.jpg')">
             </div>
             <div class="card-img-top wide d-lg-none" style="background-image: url('./images/thumbnail-4.jpg')">
               <img class="d-block d-sm-none" src="./images/mobile/offer_750x400_4.jpg" width="100%">
             </div>
           </a>
-          <div class="card-body en" style="background-image: url('./images/blur-4.jpg')">
-            <h5 class="card-title">HSBC home&Away</h5>
+
+          <div class="card-body" style="background-image: url('./images/blur-4.jpg')">
+            <h5 class="card-title">Ưu đãi home&Away</h5>
             <p class="card-text">
-              And avail of many more exciting dining, leisure and entertainment offers with <span class="color-red text-bold">HSBC home&Away</span>.
+              Và vô vàn lựa chọn hấp dẫn khác cho ăn uống, thư giãn, giải trí của <span class="color-red text-bold">HSBC home&Away</span>
             </p>
             <div class="float-bottom">
-              <a class="card-link" href="https://www.hsbc.com.vn/1/2/personal_en/credit_card_debit_card/credit_card_home_away" target="_blank">
-                Find out more
+              <a class="card-link" href="https://www.hsbc.com.vn/1/2/personal/the_tin_dung_the_thanh_toan_quoc_te/home_and_away?changelanguage.language=vi&changelanguage.country=VN&chglang.x=vi" target="_blank">
+                Tìm hiểu thêm
                 <i class="fa fa-angle-right color-red"></i>
               </a>
-              <div class="fb-share-button float-right" data-href="https://www.hsbc.com.vn/1/2/personal_en/credit_card_debit_card/credit_card_home_away" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.hsbc.com.vn/1/2/personal_en/credit_card_debit_card/credit_card_home_away&amp;src=sdkpreparse">Share</a></div>
+              <div class="fb-share-button float-right" data-href="https://www.hsbc.com.vn/1/2/personal/the_tin_dung_the_thanh_toan_quoc_te/home_and_away?changelanguage.language=vi&amp;changelanguage.country=VN&amp;chglang.x=vi" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.hsbc.com.vn%2F1%2F2%2Fpersonal%2Fthe_tin_dung_the_thanh_toan_quoc_te%2Fhome_and_away%3Fchangelanguage.language%3Dvi%26changelanguage.country%3DVN%26chglang.x%3Dvi&amp;src=sdkpreparse">Chia sẻ</a></div>
+              <div class="clearfix"></div>
             </div>
           </div>
         </div>
@@ -379,31 +385,31 @@
   </section>
 
   <section id="register-hsbc-credit" class="text-center" style="background-image: url('./images/footer.jpg')">
-    <h1>Do you have an HSBC Credit card?</h1>
+    <h1>Bạn đã có Thẻ tín dụng HSBC chưa?</h1>
     <div class="description" style="font-weight: 200">
-      With an HSBC Credit card, it's easy to enjoy all of life's privileges.
+      Với Thẻ tín dụng HSBC, thật dễ dàng để tận hưởng những ưu đãi đặc biệt.
       <br>
-      Find one that suits your needs today.
+      Hãy chọn ngay Thẻ tín dụng phù hợp nhất với bạn ngay hôm nay.
     </div>
     <img class="visa-cards" src="./images/cards.png" alt="">
     <div>
-      <a href="https://www.apps.asiapacific.hsbc.com/1/2/vnm2/lead/card/the-tin-dung-hsbc-credit-card?WABFormEntryCommand=cmd_init&DynamicData.Language=EN&pid=VNP:AC:CC:OSClp:1711:OSC3:04:en" class="btn btn-secondary register-card-btn" target="_blank">Apply now <i class="fa fa-angle-right color-red"></i></a>
+      <a href="https://www.apps.asiapacific.hsbc.com/1/2/vnm2/lead/card/the-tin-dung-hsbc-credit-card?WABFormEntryCommand=cmd_init&DynamicData.Language=VN&pid=VNP:AC:CC:OSClp:1711:OSC3:04:vn" class="btn btn-secondary register-card-btn" target="_blank">Mở thẻ ngay <i class="fa fa-angle-right color-red"></i></a>
     </div>
   </section>
 
   <section id="footer">
-    <a href="http://www.hsbc.com.vn/1/2/miscellaneous_en/privacy_en" class="float-ms-left" target="_blank">
-      Privacy and Security
+    <a href="http://www.hsbc.com.vn/1/2/miscellaneous/privacy" class="float-ms-left" target="_blank">
+      An toàn và bảo mật
     </a>
-    <a class="float-ms-left" href="http://www.hsbc.com.vn/1/2/miscellaneous_en/terms-of-use_en" target="_blank">
-      Term of Use
+    <a class="float-ms-left" href="http://www.hsbc.com.vn/1/2/miscellaneous/terms-of-use" target="_blank">
+      Điều khoản sử dụng
     </a>
-    <a class="float-ms-left" href="http://www.hsbc.com.vn/1/2/miscellaneous_en/hyperlink-policy_en" target="_blank">
-      Hyperlink Policy
+    <a class="float-ms-left" href="http://www.hsbc.com.vn/1/2/miscellaneous/hyperlink-policy" target="_blank">
+      Chính sách liên kết
     </a>
 
     <span class="copywrite float-lg-right">
-      © Copyright. HSBC Bank (Vietnam) Ltd.2017. All rights reserved
+      © Bản quyền 2017 thuộc về Ngân hàng TNHH một thành viên HSBC (Việt Nam). Tất cả các quyền được bảo hộ.
     </span>
     <div class="clearfix"></div>
   </section>
@@ -412,6 +418,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/locales/vi.min.js"></script>
-  <script src="./script.js?time=012029122017"></script>
+  <script src="./js/script.js?time=012029122017"></script>
 </body>
 </html>

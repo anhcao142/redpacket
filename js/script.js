@@ -1,3 +1,9 @@
+const curUrl = window.location.href;
+
+$('.redpacket-calculator-submit .fb-share-button').attr('data-href', curUrl);
+const href = $('.redpacket-calculator-submit .fb-share-button a').attr('href');
+$('.redpacket-calculator-submit .fb-share-button a').attr('href', href.replace('{url}', curUrl));
+
 numeral.locale('vi');
 const lang  = $('input[name="language"]').val();
 
@@ -94,8 +100,19 @@ $('#btn-calculate').on('click', function () {
     displayNotes(allNotes);
     displayAmount(quantity, amount);
 
+    const suggestBudget     = calTotal(quantity, amount);
+
     $('input[name="suggest-budget"]')
-        .val(numeral(calTotal(quantity, amount)).format('0,0'))
+        .val(numeral(suggestBudget).format('0,0'));
+
+    if (suggestBudget > budget) {
+        $('.suggest-budget .label-standard').hide();
+        $('.suggest-budget .label-error').show();
+    } else {
+        $('.suggest-budget .label-standard').show();
+        $('.suggest-budget .label-error').hide();
+    }
+
     $('.suggest-budget').fadeIn();
     $('.redpacket-calculator-result-note').fadeIn();
 

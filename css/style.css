@@ -1,12 +1,12 @@
 @font-face {
     font-family: "VNIUnivers";
-    src: url("./VNI-Univers-Light.ttf") format("truetype");
+    src: url("../fonts/VNI-Univers-Light.ttf") format("truetype");
     font-weight: lighter;
 }
 
 @font-face {
     font-family: "VNIUnivers";
-    src: url("./VNI-Univers-Bold.ttf") format("truetype");
+    src: url("../fonts/VNI-Univers-Bold.ttf") format("truetype");
     font-weight: bold;
 }
 
@@ -87,7 +87,7 @@ a.color-red:hover {
 }
 
 #hero {
-    background-image: url('./images/pc/key_1260x450.jpg');
+    background-image: url('../images/pc/key_1260x450.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -141,7 +141,7 @@ a.color-red:hover {
 
 @media (max-width: 500px) {
     #hero {
-        background-image: url('./images/mobile/key_375x220.jpg');
+        background-image: url('../images/mobile/key_375x220.jpg');
         height: 220px;
     }
 }
@@ -216,7 +216,7 @@ a.color-red:hover {
 }
 
 .redpacket-calculator-detail {
-    background-image: url('./images/pc/gift_1170x1218.jpg?time=123');
+    background-image: url('../images/pc/gift_1170x1218.jpg?time=123');
     background-position: center bottom;
     background-size: 100% auto;
     background-color: #ffebf0;
@@ -338,7 +338,7 @@ a.color-red:hover {
 
 @media (max-width: 991px) {
     .redpacket-calculator-detail {
-        background-image: url('./images/mobile/gift_750x2022.jpg');
+        background-image: url('../images/mobile/gift_750x2022.jpg');
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 350px;
