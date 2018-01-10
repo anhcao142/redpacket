@@ -232,7 +232,7 @@ a.color-red:hover {
 }
 
 .redpacket-calculator-detail {
-    background-image: url('../images/pc/gift_1170x1218.jpg?time=123');
+    background-image: url('../images/pc/gift_1120x1515.jpg?time=123');
     background-position: center bottom;
     /*background-size: 100% auto;*/
     background-color: #ffebf0;
@@ -240,7 +240,7 @@ a.color-red:hover {
     background-repeat: no-repeat;
     padding: 40px 75px;
     padding-top: 60px;
-    min-height: 1218px;
+    min-height: 1280px;
 }
 
 .redpacket-calculator-detail.en {

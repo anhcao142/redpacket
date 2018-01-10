@@ -183,7 +183,7 @@ $(document).ready(function () {
 
             var $icon = $('<img/>', {
                 src: './images/dolla.png',
-                style: 'width: 30px; margin-right: 10px; margin-top: -3px;',
+                style: 'width: 25px; margin-right: 10px; margin-top: -3px;',
             }).appendTo($divWrapper);
 
             var unit = 'tờ';
