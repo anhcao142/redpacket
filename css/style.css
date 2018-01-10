@@ -232,14 +232,15 @@ a.color-red:hover {
 }
 
 .redpacket-calculator-detail {
-    background-image: url('../images/pc/gift_1120x1515.jpg?time=123');
+    background-image: url('../images/pc/gift_1170x1218.jpg?time=123');
     background-position: center bottom;
-    background-size: 100% auto;
+    /*background-size: 100% auto;*/
     background-color: #ffebf0;
-    /*background-size: cover;*/
+    background-size: cover;
     background-repeat: no-repeat;
     padding: 40px 75px;
-    padding-bottom: 500px;
+    padding-top: 60px;
+    min-height: 1218px;
 }
 
 .redpacket-calculator-detail.en {
@@ -248,7 +249,7 @@ a.color-red:hover {
 }
 
 .redpacket-calculator-detail .input-budget {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .redpacket-calculator-detail .input-budget label {
@@ -298,7 +299,7 @@ a.color-red:hover {
 
 .redpacket-calculator-factors {
     /*padding-left: 15px;*/
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 
 #redpacket-calculator .space {
@@ -334,13 +335,13 @@ a.color-red:hover {
     .redpacket-calculator-detail {
         padding-left: 25px;
         padding-right: 25px;
-        padding-bottom: 400px;
+        padding-top: 40px;
     }
 
     .redpacket-calculator-detail.en {
         padding-left: 20px;
         padding-right: 20px;
-        padding-bottom: 400px;
+        padding-top: 40px;
     }
 
     .text-smaller {
@@ -360,7 +361,13 @@ a.color-red:hover {
         padding-right: 20px;
         padding-bottom: 350px;
         background-size: 100% auto;
+        height: auto;
     }
+
+    .redpacket-calculator-detail .input-budget {
+        margin-bottom: 30px;
+    }
+
 
     .text-smaller {
         font-size: 85% !important;
@@ -379,9 +386,9 @@ a.color-red:hover {
         padding-right: 0;
     }
 
-/*    .redpacket-calculator-factors {
-        padding-right: 15px;
-    }*/
+    .redpacket-calculator-factors {
+        padding-bottom: 30px;
+    }
 
     .input-budget input {
         max-width: 100% !important;
