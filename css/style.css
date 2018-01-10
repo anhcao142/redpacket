@@ -72,15 +72,12 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .popover .arrow {
-    left: unset !important;
-    right: 0;
     margin: 0;
 }
 
 .popover .arrow:before, .popover .arrow:after {
     border-top-color: #d60a1e;
     border-bottom-color: #d60a1e;
-    border-width: 12px 0 0 17px;
 }
 
 .text-bold {
