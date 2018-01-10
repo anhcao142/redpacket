@@ -105,6 +105,12 @@ $(document).ready(function () {
 
         var suggestBudget     = calTotal(quantity, amount);
 
+        if (lang !== 'en') {
+            $('.budget-label').text('Ngân sách của bạn');
+        } else {
+            $('.budget-label').text('Your budget');
+        }
+
         $('input[name="suggest-budget"]')
             .val(numeral(suggestBudget).format('0,0'));
 
@@ -134,6 +140,13 @@ $(document).ready(function () {
         $('.redpacket-calculator-result').fadeOut();
         $('.suggest-budget').fadeOut();
         $('.redpacket-calculator-result-note').fadeOut();
+
+        if (lang !== 'en') {
+            $('.budget-label').text('Nhập ngân sách của bạn');
+        } else {
+            $('.budget-label').text('Enter your budget');
+        }
+
 
         $(this).hide();
         $('#btn-calculate').fadeIn();
