@@ -234,12 +234,15 @@ a.color-red:hover {
 .redpacket-calculator-detail {
     background-image: url('../images/pc/gift_1120x1515.jpg?time=123');
     background-position: center bottom;
-    /*background-size: 100% auto;*/
+    background-size: 100% auto;
     background-color: #ffebf0;
-    background-size: cover;
     background-repeat: no-repeat;
     padding: 40px 75px;
     padding-top: 60px;
+    min-height: 1080px;
+}
+
+.redpacket-calculator-detail.result-detail {
     min-height: 1280px;
 }
 
