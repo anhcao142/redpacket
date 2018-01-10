@@ -228,8 +228,11 @@ $(document).ready(function () {
         if (isNaN(val) || val < 0) return $(this).val(0);
     })
 
+    var popper;
+
     $('input[name="budget"]').on('propertychange change keyup input paste blur', function (e) {
-        $('.input-budget input[name="budget"]').popover('dispose')
+        if (popper) popper.destroy();
+
         if (!$(this).val()) {
             $('.input-budget .help-block').fadeOut();
             $('.input-budget input[name="budget"]').removeClass('is-invalid');
@@ -249,12 +252,15 @@ $(document).ready(function () {
                 content = '*Số tiền chưa hợp lệ!';
             }
 
-            $('.input-budget input[name="budget"]').popover({
-                placement: 'bottom',
-                html: true,
-                content: '<span class="color-red">' + content + '</span>',
-            });
-            $('.input-budget input[name="budget"]').popover('show')
+            $('.popover .popover-body').text(content);
+            popper = new Popper($('#budget').get(0), $('.popover').get(0), {
+                placement: 'top-end',
+                modifiers: [{
+                    preventOverflow: {
+                        boundariesElement: 'window'
+                    }
+                }]
+            })
 
             return;
         }
@@ -270,6 +276,7 @@ $(document).ready(function () {
     function validateInputBudget() {
         $('.input-budget .help-block').hide();
         $('.input-budget input[name="budget"]').removeClass('is-invalid');
+        if (popper) popper.destroy();
 
         var isValid = true;
         var content = '';
@@ -296,13 +303,11 @@ $(document).ready(function () {
         }
 
         if (!isValid) {
-            $('.input-budget input[name="budget"]').popover({
-                placement: 'bottom',
-                html: true,
-                content: '<span class="color-red">' + content + '</span>',
-            });
-            $('.input-budget input[name="budget"]').popover('show')
-
+            $('.popover .popover-body').text(content);
+            popper = new Popper($('#budget').get(0), $('.popover').get(0), {
+                placement: 'top-end',
+                modifier: 'offset'
+            })
 
             // $('.input-budget .help-block').text(content).fadeIn();
             $('html, body').animate({ scrollTop: $('.input-budget input[name="budget"]').offset().top - 40 }, 200);
