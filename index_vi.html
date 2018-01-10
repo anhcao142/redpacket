@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Lì xì may mắn | HSBC (Việt Nam)</title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./css/style.css?time=012029122017">
+  <link rel="stylesheet" href="css/style.css?time=012029122017">
 </head>
 <body>
   <div id="fb-root"></div>
@@ -18,6 +18,7 @@
     js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.11';
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
+
   <section id="header">
     <div class="select-language">
         <a class="float-right select-language-btn" href="/index_en.html">
@@ -45,12 +46,12 @@
       <div class="intro-content text-justify">
         <p>
           <strong>
-            Trao gửi niềm vui trong mỗi phong bao lì xì may mắn và lan tỏa yêu thương Tết này cùng HSBC!
+            Hãy cùng trao gửi yêu thương trong mỗi phong bao lì xì may mắn và lan tỏa niềm vui Tết này!
           </strong>
         </p>
         <span class="text-justify">
           Bạn có thể linh hoạt chọn ngân sách & đối tượng theo ý muốn.
-        Sau đó, hãy để Công cụ Lì Xì HSBC tính toán mức tiền mừng tuổi tối ưu dành cho người thân và bạn bè của bạn.
+          Sau đó, hãy để công cụ “Lì Xì May Mắn” tính toán mức tiền mừng tuổi tối ưu dành cho bạn bè và người thân của bạn.
         </span>
       </div>
     </div>
@@ -58,7 +59,7 @@
   <section id="redpacket-calculator">
     <div class="inner-content text-center">
       <h1 class="redpacket-title color-red">LÌ XÌ MAY MẮN</h1>
-      <p class="redpacket-description">Nhập ngân sách của bạn và HSBC sẽ gợi ý cho bạn mức lì xì tối ưu cho từng người thân hoặc bạn bè của bạn</p>
+      <p class="redpacket-description">Nhập ngân sách của bạn và công cụ dưới đây sẽ giúp bạn tính toán mức lì xì tối ưu cho từng người thân hoặc bạn bè xung quanh.</p>
 
       <div class="redpacket-calculator-detail text-left">
         <div class="input-budget row">
@@ -73,7 +74,7 @@
               <label class="color-red" for="bugdet">Ngân sách của bạn</label>
               <div class="currency-unit" style="margin-bottom: 10px;">
                 <span>VND</span>
-                <input class="form-control" id="budget" name="budget" type="tel" placeholder="Nhập ngân sách của bạn">
+                <input class="form-control" id="budget" name="budget" type="tel" placeholder="Nhập ngân sách của bạn" data-container="body" data-placement="bottom" data-content="">
               </div>
               <div class="space">
                 <div class="help-block text-danger collapse" style="font-size: 0.9rem;">
@@ -84,13 +85,13 @@
           </div>
           <div class="col-lg-8 col-sm-6">
             <div class="form-group suggest-budget collapse">
-              <label class="color-red label-standard" for="suggest-budget">Ngân sách chúng tôi đề nghị</label>
-              <label class="color-red collapse label-error" for="suggest-budget">
-                Có vẻ ngân sách của bạn chưa được cân nhắc kỹ. Ngân sách tối ưu chúng tôi đề xuất là:
-              </label>
+              <label class="color-red" for="suggest-budget">Ngân sách chúng tôi đề nghị</label>
               <div class="currency-unit" style="margin-bottom: 10px;">
                 <span>VND</span>
                 <input class="form-control" id="suggest-budget" name="suggest-budget" type="text" value="800" readonly>
+              </div>
+              <div class="form-text collapse label-error">
+                <small><i>Có vẻ ngân sách của bạn chưa được cân nhắc kỹ. Đây là ngân sách tối ưu chúng tôi đề nghị.</i></small>
               </div>
             </div>
           </div>
@@ -98,18 +99,22 @@
 
         <div class="redpacket-calculator-factors">
           <div class="row">
-            <div class="form-group">
-              <label class="color-red" style="margin-bottom: 0; font-weight: bold">Số lượng người thân/ bạn bè bạn dự định lì xì</label>
-              <div>
-                <small><i>Bạn cần điền số lượng người thân/ bạn bè vào từng ô tương ứng. Nếu bạn dự định không lì xì cho đối tượng nào thì vui lòng điền “0” vào ô số lượng tương ứng.</i></small>
+            <div class="col-12">
+              <div class="form-group">
+                <label class="color-red" style="margin-bottom: 0; font-weight: bold">Số lượng người thân/ bạn bè bạn dự định lì xì</label>
+                <div>
+                  <small><i>Bạn cần điền số lượng người thân/ bạn bè vào từng ô tương ứng. Nếu bạn dự định không lì xì cho đối tượng nào thì vui lòng điền “0” vào ô số lượng tương ứng hoặc để trống.</i></small>
+                </div>
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-4 column">
+            <div class="col-lg-4">
               <div class="form-group row budget-factor">
-                <label class="col-4 col-sm-4 col-form-label" for="grandparents">Ông bà</label>
-                <div class="col-8 col-sm-8 column">
+                <div class="col-4 col-md-5">
+                  <label for="grandparents">Ông bà</label>
+                </div>
+                <div class="col-8 col-md-7 column">
                   <div class="budget-amount collapse">
                     <span></span>
                     <img src="" alt="">
@@ -122,8 +127,10 @@
                 </div>
               </div>
               <div class="form-group row budget-factor">
-                <label class="col-4 col-sm-4 col-form-label" for="parents">Cha mẹ</label>
-                <div class="col-8 col-sm-8 column" style="position: relative;">
+                <div class="col-4 col-md-5">
+                  <label for="parents">Cha mẹ</label>
+                </div>
+                <div class="col-8 col-md-7 column" style="position: relative;">
                   <div class="budget-amount collapse">
                     <span></span>
                     <img src="" alt="">
@@ -136,8 +143,10 @@
                 </div>
               </div>
               <div class="form-group row budget-factor">
-                <label class="col-4 col-sm-4 col-form-label" for="spouse">Bạn đời</label>
-                <div class="col-8 col-sm-8 column">
+                <div class="col-4 col-md-5" for="spouse">
+                  <label for="spouse">Bạn đời</label>
+                </div>
+                <div class="col-8 col-md-7 column">
                   <div class="budget-amount collapse">
                     <span></span>
                     <img src="" alt="">
@@ -150,10 +159,13 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 column">
+            <div class="col-lg-4">
               <div class="form-group row budget-factor">
-                <label class="col-4 col-sm-4 col-form-label" for="children">Con</label>
-                <div class="col-8 col-sm-8 column">
+                <div class="col-4 col-md-5">
+                  <label for="children">Con</label>
+                </div>
+                <!-- <label class="col-4 col-md-5 col-form-label" for="children">Con</label> -->
+                <div class="col-8 col-md-7 column">
                   <div class="budget-amount collapse">
                     <span></span>
                     <img src="" alt="">
@@ -166,8 +178,10 @@
                 </div>
               </div>
               <div class="form-group row budget-factor">
-                <label class="col-4 col-sm-4 col-form-label" for="siblings">Anh chị em</label>
-                <div class="col-8 col-sm-8 column">
+                <div class="col-4 col-md-5" for="siblings">
+                  <label for="siblings">Anh chị em</label>
+                </div>
+                <div class="col-8 col-md-7 column">
                   <div class="budget-amount collapse">
                     <span></span>
                     <img src="" alt="">
@@ -180,8 +194,10 @@
                 </div>
               </div>
               <div class="form-group row budget-factor">
-                <label class="col-4 col-sm-4 col-form-label" for="grandchildren">Cháu</label>
-                <div class="col-8 col-sm-8 column">
+                <div class="col-4 col-md-5" for="grandchildren">
+                  <label for="grandchildren">Cháu</label>
+                </div>
+                <div class="col-8 col-md-7 column">
                   <div class="budget-amount collapse">
                     <span></span>
                     <img src="" alt="">
@@ -194,10 +210,12 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 column">
+            <div class="col-lg-4">
               <div class="form-group row budget-factor">
-                <label class="col-4 col-sm-4 col-form-label" for="lover">Người yêu</label>
-                <div class="col-8 col-sm-8 column">
+                <div class="col-4 col-md-5">
+                  <label for="lover">Người yêu</label>
+                </div>
+                <div class="col-8 col-md-7 column">
                   <div class="budget-amount collapse">
                     <span></span>
                     <img src="" alt="">
@@ -210,8 +228,10 @@
                 </div>
               </div>
               <div class="form-group row budget-factor">
-                <label class="col-4 col-sm-4 col-form-label" for="friends">Bạn bè</label>
-                <div class="col-8 col-sm-8 column">
+                <div class="col-4 col-md-5">
+                  <label for="friends">Bạn bè</label>
+                </div>
+                <div class="col-8 col-md-7 column">
                   <div class="budget-amount collapse">
                     <span></span>
                     <img src="" alt="">
@@ -224,8 +244,10 @@
                 </div>
               </div>
               <div class="form-group row budget-factor">
-                <label class="col-4 col-sm-4 col-form-label" for="colleagues">Đồng nghiệp</label>
-                <div class="col-8 col-sm-8 column">
+                <div class="col-4 col-md-5">
+                  <label for="colleagues">Đồng nghiệp</label>
+                </div>
+                <div class="col-8 col-md-7 column">
                   <div class="budget-amount collapse">
                     <span></span>
                     <img src="" alt="">
@@ -413,11 +435,10 @@
     </span>
     <div class="clearfix"></div>
   </section>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.3/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/locales/vi.min.js"></script>
-  <script src="./js/script.js?time=012029122017"></script>
+  <script src="js/script.js?time=012029122017"></script>
 </body>
 </html>

@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Give lucky money, share eternal love | HSBC (Việt Nam)</title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./css/style.css?time=012029122017">
+  <link rel="stylesheet" href="css/style.css?time=012029122017">
 </head>
-<body>
+<body class="en">
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -79,12 +79,15 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6">
+          <div class="col-lg-8 col-sm-6">
             <div class="form-group suggest-budget collapse">
               <label class="color-red" for="suggest-budget">Budget recommended</label>
               <div class="currency-unit" style="margin-bottom: 10px;">
                 <span>VND</span>
                 <input class="form-control" id="suggest-budget" name="suggest-budget" type="text" value="800" readonly>
+              </div>
+              <div class="form-text collapse label-error">
+                <small><i>The amount you entered is insufficient. Our suggested budget is stated above.</i></small>
               </div>
             </div>
           </div>
@@ -92,18 +95,22 @@
 
         <div class="redpacket-calculator-factors">
           <div class="row">
-            <div class="form-group">
-              <label class="color-red" style="margin-bottom: 0; font-weight: bold">Number of friends/ family you want to gift</label>
-              <div>
-                <small><i>You need to enter number of friends/ family into respectively boxes. For anyone you don't want to gift, please leave "0" in the box.</i></small>
+            <div class="col-12">
+              <div class="form-group">
+                <label class="color-red" style="margin-bottom: 0; font-weight: bold">Number of friends/ family you want to gift</label>
+                <div>
+                  <small><i>You need to enter number of friends/ family into respectively boxes. For anyone you don't want to gift, please leave "0" (or leave blank) in the box.</i></small>
+                </div>
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-4 column">
+            <div class="col-lg-4">
               <div class="form-group row budget-factor en">
-                <label class="col-4 col-sm-4 col-form-label" for="grandparents">Grandparents</label>
-                <div class="col-8 col-sm-8 column">
+                <div class="col-4 col-md-5">
+                  <label for="grandparents">Grandparents</label>
+                </div>
+                <div class="col-8 col-md-7 column">
                   <div class="budget-amount collapse">
                     <span></span>
                     <img src="" alt="">
@@ -116,8 +123,10 @@
                 </div>
               </div>
               <div class="form-group row budget-factor en">
-                <label class="col-4 col-sm-4 col-form-label" for="parents">Parents</label>
-                <div class="col-8 col-sm-8 column" style="position: relative;">
+                <div class="col-4 col-md-5">
+                  <label for="parents">Parents</label>
+                </div>
+                <div class="col-8 col-md-7 column" style="position: relative;">
                   <div class="budget-amount collapse">
                     <span></span>
                     <img src="" alt="">
@@ -130,8 +139,10 @@
                 </div>
               </div>
               <div class="form-group row budget-factor en">
-                <label class="col-4 col-sm-4 col-form-label" for="spouse">Husband/Wife</label>
-                <div class="col-8 col-sm-8 column">
+                <div class="col-4 col-md-5">
+                  <label for="spouse">Husband/Wife</label>
+                </div>
+                <div class="col-8 col-md-7 column">
                   <div class="budget-amount collapse">
                     <span></span>
                     <img src="" alt="">
@@ -144,10 +155,12 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 column">
+            <div class="col-lg-4">
               <div class="form-group row budget-factor en">
-                <label class="col-4 col-sm-4 col-form-label" for="children">Children</label>
-                <div class="col-8 col-sm-8 column">
+                <div class="col-4 col-md-5">
+                  <label for="children">Children</label>
+                </div>
+                <div class="col-8 col-md-7 column">
                   <div class="budget-amount collapse">
                     <span></span>
                     <img src="" alt="">
@@ -160,8 +173,10 @@
                 </div>
               </div>
               <div class="form-group row budget-factor en">
-                <label class="col-4 col-sm-4 col-form-label" for="siblings">Siblings</label>
-                <div class="col-8 col-sm-8 column">
+                <div class="col-4 col-md-5">
+                  <label for="siblings">Siblings</label>
+                </div>
+                <div class="col-8 col-md-7 column">
                   <div class="budget-amount collapse">
                     <span></span>
                     <img src="" alt="">
@@ -174,8 +189,10 @@
                 </div>
               </div>
               <div class="form-group row budget-factor en">
-                <label class="col-4 col-sm-4 col-form-label text-smaller" for="grandchildren">Nieces/Nephews</label>
-                <div class="col-8 col-sm-8 column">
+                <div class="col-4 col-md-5">
+                  <label class="text-smaller" for="grandchildren">Nieces/Nephews</label>
+                </div>
+                <div class="col-8 col-md-7 column">
                   <div class="budget-amount collapse">
                     <span></span>
                     <img src="" alt="">
@@ -188,10 +205,12 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 column">
+            <div class="col-lg-4">
               <div class="form-group row budget-factor en">
-                <label class="col-4 col-sm-4 col-form-label" for="lover">Boy/Girlfriend</label>
-                <div class="col-8 col-sm-8 column">
+                <div class="col-4 col-md-5">
+                  <label for="lover">Boy/Girlfriend</label>
+                </div>
+                <div class="col-8 col-md-7 column">
                   <div class="budget-amount collapse">
                     <span></span>
                     <img src="" alt="">
@@ -204,8 +223,10 @@
                 </div>
               </div>
               <div class="form-group row budget-factor en">
-                <label class="col-4 col-sm-4 col-form-label" for="friends">Friends</label>
-                <div class="col-8 col-sm-8 column">
+                <div class="col-4 col-md-5">
+                  <label for="friends">Friends</label>
+                </div>
+                <div class="col-8 col-md-7 column">
                   <div class="budget-amount collapse">
                     <span></span>
                     <img src="" alt="">
@@ -218,8 +239,10 @@
                 </div>
               </div>
               <div class="form-group row budget-factor en">
-                <label class="col-4 col-sm-4 col-form-label" for="colleagues">Colleagues</label>
-                <div class="col-8 col-sm-8 column">
+                <div class="col-4 col-md-5">
+                  <label for="colleagues">Colleagues</label>
+                </div>
+                <div class="col-8 col-md-7 column">
                   <div class="budget-amount collapse">
                     <span></span>
                     <img src="" alt="">
@@ -407,11 +430,10 @@
     </span>
     <div class="clearfix"></div>
   </section>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.3/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/locales/vi.min.js"></script>
-  <script src="./js/script.js?time=012029122017"></script>
+  <script src="js/script.js?time=012029122017"></script>
 </body>
 </html>
