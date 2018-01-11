@@ -250,7 +250,7 @@ $(document).ready(function () {
             }
 
             $('.input-budget input[name="budget"]').popover({
-                placement: 'bottom',
+                placement: 'top',
                 html: true,
                 content: '<span class="color-red">' + content + '</span>',
             });
@@ -297,7 +297,7 @@ $(document).ready(function () {
 
         if (!isValid) {
             $('.input-budget input[name="budget"]').popover({
-                placement: 'bottom',
+                placement: 'top',
                 html: true,
                 content: '<span class="color-red">' + content + '</span>',
             });
