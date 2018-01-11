@@ -156,7 +156,7 @@ $(document).ready(function () {
 
 
     function displayAmount(quantity, amount) {
-        $('.budget-amount img').attr('src', '');
+        $('.budget-amount img').attr('src', '').hide();
         $('.budget-amount span').empty();
 
 
@@ -174,6 +174,7 @@ $(document).ready(function () {
                 $budgetAmount.find('img').attr('src', './images/redpacket-2.png');
             }
 
+            $budgetAmount.find('img').show();
             $budgetAmount.find('span').text(numeral(amt * 1000).format('0,0') + ' VND x ' + qty);
         })
 
