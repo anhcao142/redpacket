@@ -61,23 +61,35 @@ input[type=number]::-webkit-outer-spin-button {
 
 .popover {
     border-color: #d60a1e;
-    background-color: #d60a1e;
+    background-color: #fff4b9;
     color: white !important;
     border-radius: 0;
-    top: 8px !important;
 }
 
-.popover span {
-    color: white !important;
+.bs-popover-bottom {
+    top: -9px !important;
+}
+
+.bs-popover-top {
+    top: 9px !important;
 }
 
 .popover .arrow {
     margin: 0;
 }
 
-.popover .arrow:before, .popover .arrow:after {
+.popover .arrow:before {
     border-top-color: #d60a1e;
     border-bottom-color: #d60a1e;
+}
+
+.popover .arrow:after {
+    border-top-color: #fff4b9;
+    border-bottom-color: #fff4b9;
+}
+
+.popover-body {
+    color: #d60a1e;
 }
 
 .text-bold {
