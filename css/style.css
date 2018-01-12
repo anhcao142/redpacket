@@ -269,7 +269,7 @@ a.color-red:hover {
 }
 
 .redpacket-calculator-detail {
-    background-image: url('../images/pc/gift_1170x1580.jpg?time=123');
+    background-image: url('../images/pc/gift_1170x1218.jpg?time=123');
     background-position: center bottom;
     background-size: 100% auto;
     background-color: #ffebf0;
@@ -377,7 +377,7 @@ a.color-red:hover {
         padding-left: 25px;
         padding-right: 25px;
         padding-top: 40px;
-        background-image: url('../images/pc/gift_1170x1580.jpg');
+        background-image: url('../images/pc/gift_1170x1218.jpg');
         min-height: 940px;
     }
 
@@ -528,30 +528,11 @@ a.color-red:hover {
 @media (max-width: 460px) {
     .redpacket-calculator-detail {
         background-image: url('../images/mobile/gift_750x2360.jpg');
-        min-height: 920px;
+        min-height: 1050px;
         background-size: 100% auto;
         padding: 25px 20px;
+        padding-top: 40px;
     }
-
-    .redpacket-calculator-detail.en {
-        padding-top: 30px;
-    }
-
-    .redpacket-calculator-detail .space {
-        display: none;
-    }
-
-    .redpacket-calculator-factors {
-        padding-bottom: 20px;
-    }
-
-    .budget-factor {
-        margin-bottom: 7px;
-    }
-
-/*    .redpacket-calculator-detail.en {
-        padding-top: 20px;
-    }*/
 
     .redpacket-calculator-detail .redpacket-calculator-result-note {
         font-size: 0.85;
@@ -568,20 +549,17 @@ a.color-red:hover {
 @media (max-width: 375px) {
     .redpacket-calculator-detail {
         background-image: url('../images/mobile/gift_750x2360.jpg');
-        min-height: 890px;
-        padding: 25px 20px;
+        min-height: 940px;
     }
 
     .redpacket-calculator-detail .space {
         display: none;
     }
 
-    .redpacket-calculator-detail {
-        padding-top: 20px;
-    }
-
     .redpacket-calculator-detail.result-detail {
         min-height: 1180px;
+        padding-top: 20px;
+
     }
 
     .redpacket-calculator-factors {
