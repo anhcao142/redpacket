@@ -269,7 +269,7 @@ a.color-red:hover {
 }
 
 .redpacket-calculator-detail {
-    background-image: url('../images/pc/gift_1170x1218.jpg?time=123');
+    background-image: url('../images/pc/gift_1170x1218.jpg?time=120120181645');
     background-position: center bottom;
     background-size: 100% auto;
     background-color: #ffebf0;
@@ -280,7 +280,7 @@ a.color-red:hover {
 }
 
 .redpacket-calculator-detail.result-detail {
-    background-image: url('../images/pc/gift_1170x1580.jpg?time=123');
+    background-image: url('../images/pc/gift_1170x1580.jpg?time=120120181645');
     min-height: 1280px;
 }
 
@@ -377,7 +377,7 @@ a.color-red:hover {
         padding-left: 25px;
         padding-right: 25px;
         padding-top: 40px;
-        background-image: url('../images/pc/gift_1170x1218.jpg');
+        background-image: url('../images/pc/gift_1170x1218.jpg?time=120120181645');
         min-height: 940px;
     }
 
@@ -403,14 +403,14 @@ a.color-red:hover {
 
 @media (max-width: 991px) {
     .redpacket-calculator-detail {
-        background-image: url('../images/mobile/gift_750x2022.jpg');
+        background-image: url('../images/mobile/gift_750x2022.jpg?time=120120181645');
         padding-left: 20px;
         padding-right: 20px;
         min-height: 1180px;
     }
 
     .redpacket-calculator-detail.result-detail {
-        background-image: url('../images/mobile/gift_750x2022.jpg');
+        background-image: url('../images/mobile/gift_750x2022.jpg?time=120120181645');
         min-height: 1420px;
     }
 
@@ -453,13 +453,13 @@ a.color-red:hover {
 
 @media (max-width: 767px) {
     .redpacket-calculator-detail {
-        background-image: url('../images/mobile/gift_750x2022.jpg');
+        background-image: url('../images/mobile/gift_750x2022.jpg?time=120120181645');
         padding: 25px 20px;
         min-height: 1180px;
     }
 
     .redpacket-calculator-detail.result-detail {
-        background-image: url('../images/mobile/gift_750x2022.jpg');
+        background-image: url('../images/mobile/gift_750x2022.jpg?time=120120181645');
         min-height: 1340px;
     }
 
@@ -515,19 +515,19 @@ a.color-red:hover {
 
 @media (max-width: 660px) {
     .redpacket-calculator-detail {
-        background-image: url('../images/mobile/gift_750x2022.jpg');
+        background-image: url('../images/mobile/gift_750x2022.jpg?time=120120181645');
         min-height: 1100px;
     }
 
     .redpacket-calculator-detail.result-detail {
-        background-image: url('../images/mobile/gift_750x2360.jpg');
+        background-image: url('../images/mobile/gift_750x2360.jpg?time=120120181645');
         min-height: 1340px;
     }
 }
 
 @media (max-width: 460px) {
     .redpacket-calculator-detail {
-        background-image: url('../images/mobile/gift_750x2360.jpg');
+        background-image: url('../images/mobile/gift_750x2360.jpg?time=120120181645');
         min-height: 1050px;
         background-size: 100% auto;
         padding: 25px 20px;
@@ -548,7 +548,7 @@ a.color-red:hover {
 
 @media (max-width: 375px) {
     .redpacket-calculator-detail {
-        background-image: url('../images/mobile/gift_750x2360.jpg');
+        background-image: url('../images/mobile/gift_750x2360.jpg?time=120120181645');
         min-height: 940px;
     }
 
