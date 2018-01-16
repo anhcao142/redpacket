@@ -169,7 +169,7 @@ $(document).ready(function () {
             var $budgetAmount = $('#' + key).closest('.budget-factor').find('.budget-amount');
 
             if (qty === 1) {
-                $budgetAmount.find('img').attr('src', './images/redpacket-1.png');
+                $budgetAmount.find('img').attr('src', './images/redpacket-1.png?time=123');
             } else {
                 $budgetAmount.find('img').attr('src', './images/redpacket-2.png');
             }
