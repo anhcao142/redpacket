@@ -137,7 +137,7 @@ $(document).ready(function () {
         $('.budget-amount').hide();
         $('input[name="budget"]').val('');
         $('.budget-factor .controller').fadeIn();
-        $('.budget-factor input').val(0);
+        $('.budget-factor input').val('');
         $('.redpacket-calculator-result').fadeOut();
         $('.suggest-budget').fadeOut();
         $('.redpacket-calculator-result-note').fadeOut();
@@ -224,9 +224,11 @@ $(document).ready(function () {
     var prevBudget  = 0;
 
     $('.budget-factor input').on('propertychange change keyup input paste blur', function (e) {
+        if ($(this).val() == '' || !$(this).val()) return $(this).val('');
         var val     = parseInt($(this).val());
 
         if (isNaN(val) || val < 0) return $(this).val(0);
+        return $(this).val(val);
     })
 
     $('input[name="budget"]').on('propertychange change keyup input paste blur', function (e) {
