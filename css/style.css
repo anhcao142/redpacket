@@ -917,7 +917,7 @@ a.color-red:hover {
     margin-top: 50px;
     margin-bottom: 20px;
     width: auto;
-    height: 55px;
+    height: 45px;
 }
 
 .register-card-btn {
@@ -1018,7 +1018,6 @@ a.color-red:hover {
         display: block;
     }
 }
-
 
 @media (max-width: 500px) {
     #footer a {
